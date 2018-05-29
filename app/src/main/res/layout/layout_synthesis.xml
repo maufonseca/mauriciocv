@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  android:orientation="vertical"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:padding="8dp"
+  tools:context=".MainActivity">
+    <TextView
+      android:text="Maurício Fonseca"
+      android:textStyle="bold"
+      android:textSize="24sp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content" />
+    <TextView
+      android:text="Mobile Developer"
+      android:textStyle="bold"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content" />
+
+
+    <TextView
+      android:text="Síntese de Qualificações"
+      android:textSize="24sp"
+      android:textStyle="bold"
+      android:layout_marginTop="8dp"
+      android:layout_marginBottom="8dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content" />
+
+    <TextView
+      android:text="Prática em QA, organização de equipes de desenvolvimento guiado a testes e utilização de ferramentas de automatização no processo produtivo de aplicativos mobile e Web utilizando as linguagens Groovy e Gherkin"
+      android:layout_marginBottom="8dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content" />
+    <TextView
+      android:text="Experiência em desenvolvimento nativo para sistemas Android e iOS, domínio das IDEs Android Studio e Xcode e das linguagens de programação: Java, Objective-C e Swift"
+      android:layout_marginBottom="8dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content" />
+    <TextView
+      android:text="Domínio das arquiteturas atuais e das bibliotecas mais comuns para suas implantações "
+      android:layout_marginBottom="8dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content" />
+    <TextView
+      android:text="Conhecimentos sólidos de UI/UX e regras de design Android/iOS"
+      android:layout_marginBottom="8dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content" />
+    <TextView
+      android:text="Trabalho com Desenvolvimento Ágil utilizando versionamento de código"
+      android:layout_marginBottom="8dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content" />
+    <TextView
+      android:text="Prática em todas as etapas de teste de software, experiência em Desenvolvimento Guiado por Testes (TDD) e por Comportamento (BDD). Conhecimento das bibliotecas e ferramentas relacionadas"
+      android:layout_marginBottom="8dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content" />
+    <TextView
+      android:text="Prática com uso de APIs de autenticação, pagamentos, localização e com APIs que seguem o padrão REST"
+      android:layout_marginBottom="8dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content" />
+    <TextView
+      android:text="Experiência em publicações de aplicativos na Play Store e App Store, bem como técnicas de integração contínua, publicação contínua e configuração de variações do mesmo projeto através de Flavors e Build Schemes"
+      android:layout_marginBottom="8dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content" />
+</LinearLayout>

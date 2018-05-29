@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  android:orientation="vertical"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:padding="8dp"
+  tools:context=".MainActivity">
+
+    <TextView
+      android:text="Formação Acadêmica"
+      android:textSize="24sp"
+      android:textStyle="bold"
+      android:layout_marginTop="8dp"
+      android:layout_marginBottom="8dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content" />
+
+    <TextView
+      android:text="MBA em Gestão de Projetos – Abr/2017 ao Presente\n
+Universidade de São Paulo – USP – Campus de Piracicaba/SP"
+      android:layout_marginBottom="8dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content" />
+    <TextView
+      android:text="Bacharelado em Engenharia de Computação – Concluído em 2017\n
+Universidade de São Paulo – USP – Campus de São Carlos/SP\n
+ - TCC publicado em 2016: “Teste de software em aplicativos móveis no ambiente empresarial: um relato de experiência”"
+      android:layout_marginBottom="8dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content" />
+
+</LinearLayout>
