@@ -63,67 +63,67 @@ public class Snippet {
 
     Snippet devRinga = new Snippet("Jan/2016 a Dez/2017 – Ringa (www.ringa.com.br)",
       "Empresa desenvolve aplicativos Android/iOS e Sistemas Web\nDesenvolvedor Mobile (Android/iOS)",
-      "Análise e Manutenção de aplicativos já publicados\\n\n" +
-        "Supervisão e instrução de estagiários da empresa no desenvolvimento mobile\\n\n" +
-        "Interação com clientes da empresa para buscar soluções para os aplicativos\\n\n" +
-        "Prática avançada com repositórios git (utilizando o padrão GitFlow ou qualquer outro)\\n\n" +
-        "Programação em linguagens:\\n\n" +
-        " - Java, Objective-C e Swift\\n\n" +
-        "Migração de sistemas legado de Objective-C para Swift\\n\n" +
-        "Teste de software para aplicativos\\n\n" +
-        " - Testes unitários (JUnit, Mockito, XCTest)\\n\n" +
-        " - Testes de interface/instrumentação Android e iOS\\n\n" +
-        " - Desenvolvimento Guiado por Testes (TDD)\\n\n" +
-        " - Análise de comportamento, desempenho e uso racional de recursos do dispositivo (Instruments, Traceview)\\n\n" +
-        "Conhecimentos sólidos de UI/UX, Material design e fluxos de navegação Android/iOS\\n\n" +
-        " - Trabalho com layouts para várias dimensões de tela\\n\n" +
-        " - Uso eficiente dos componentes nativos Android e Android Support Library\\n\n" +
-        " - Criação de layouts complexos com os componentes do UIKit para iOS\\n\n" +
-        "Experiência em Desenvolvimento Ágil (Scrum e XP)\\n\n" +
-        " - Entregas sistemáticas de Sprints/Milestones (Scrum)\\n\n" +
-        " - Uso de sistemas de gerenciamento de trabalho (Jira/Trello/GitHub)\\n\n" +
-        " - Publicação de features completas em um dia (XP)\\n\n" +
-        "Desenvolvimento com diferentes padrões de projeto\\n\n" +
-        " - MVC\\n\n" +
-        " - MVVM\\n\n" +
-        " - MVP\\n\n" +
-        " - VIPER\\n\n" +
-        " - Clean-Architecture\\n\n" +
-        "Conhecimento básico em programação reativa\\n\n" +
-        " - Programação com o padrão Observador/Observável\\n\n" +
-        " - Prática com RxJava/RxAndroid\\n\n" +
-        "Uso de APIs\\n\n" +
-        " - Autenticação por redes sociais (Google/Facebook/LinkedIn)\\n\n" +
-        " - Google Places/Maps\\n\n" +
-        " - Firebase Cloud Messaging (Push notifications)\\n\n" +
+      "Análise e Manutenção de aplicativos já publicados\n" +
+        "Supervisão e instrução de estagiários da empresa no desenvolvimento mobile\n" +
+        "Interação com clientes da empresa para buscar soluções para os aplicativos\n" +
+        "Prática avançada com repositórios git (utilizando o padrão GitFlow ou qualquer outro)\n" +
+        "Programação em linguagens:\n" +
+        " - Java, Objective-C e Swift\n" +
+        "Migração de sistemas legado de Objective-C para Swift\n" +
+        "Teste de software para aplicativos\n" +
+        " - Testes unitários (JUnit, Mockito, XCTest)\n" +
+        " - Testes de interface/instrumentação Android e iOS\n" +
+        " - Desenvolvimento Guiado por Testes (TDD)\n" +
+        " - Análise de comportamento, desempenho e uso racional de recursos do dispositivo (Instruments, Traceview)\n" +
+        "Conhecimentos sólidos de UI/UX, Material design e fluxos de navegação Android/iOS\n" +
+        " - Trabalho com layouts para várias dimensões de tela\n" +
+        " - Uso eficiente dos componentes nativos Android e Android Support Library\n" +
+        " - Criação de layouts complexos com os componentes do UIKit para iOS\n" +
+        "Experiência em Desenvolvimento Ágil (Scrum e XP)\n" +
+        " - Entregas sistemáticas de Sprints/Milestones (Scrum)\n" +
+        " - Uso de sistemas de gerenciamento de trabalho (Jira/Trello/GitHub)\n" +
+        " - Publicação de features completas em um dia (XP)\n" +
+        "Desenvolvimento com diferentes padrões de projeto\n" +
+        " - MVC\n" +
+        " - MVVM\n" +
+        " - MVP\n" +
+        " - VIPER\n" +
+        " - Clean-Architecture\n" +
+        "Conhecimento básico em programação reativa\n" +
+        " - Programação com o padrão Observador/Observável\n" +
+        " - Prática com RxJava/RxAndroid\n" +
+        "Uso de APIs\n" +
+        " - Autenticação por redes sociais (Google/Facebook/LinkedIn)\n" +
+        " - Google Places/Maps\n" +
+        " - Firebase Cloud Messaging (Push notifications)\n" +
         " - Prática na criação de APIs utilizando Ruby on Rails\\n\n" +
-        " - Consumo de APIs REST com uso das bibliotecas Volley, Retrofit e AlamoFire\\n\n" +
-        " - Parsing de dados no formato JSON\\n\n" +
-        "Prática com e-commerce\\n\n" +
-        " - Gerenciamento de pagamentos/cobranças seguras utilizando Stripe e PagSeguro\\n\n" +
-        " - Criação de aplicativos de compra/venda de artigos, lojas virtuais e marketplaces\\n\n" +
-        "Persistência de dados básica em aplicativos\\n\n" +
-        " - Uso de banco de dados (Realm/SQLite)\\n\n" +
-        "Prática com criptografia de arquivos no padrão AES\\n\n" +
-        "Análise e rastreamento de uso do aplicativo\\n\n" +
-        "Rastreamento do comportamento do usuário no aplicativo (Crashlytics/Analytics)\\n\n" +
-        "Prática com configuração e análise de histórico de erros\\n\n" +
+        " - Consumo de APIs REST com uso das bibliotecas Volley, Retrofit e AlamoFire\n" +
+        " - Parsing de dados no formato JSON\n" +
+        "Prática com e-commerce\n" +
+        " - Gerenciamento de pagamentos/cobranças seguras utilizando Stripe e PagSeguro\n" +
+        " - Criação de aplicativos de compra/venda de artigos, lojas virtuais e marketplaces\n" +
+        "Persistência de dados básica em aplicativos\n" +
+        " - Uso de banco de dados (Realm/SQLite)\n" +
+        "Prática com criptografia de arquivos no padrão AES\n" +
+        "Análise e rastreamento de uso do aplicativo\n" +
+        "Rastreamento do comportamento do usuário no aplicativo (Crashlytics/Analytics)\n" +
+        "Prática com configuração e análise de histórico de erros\n" +
         "Publicação de aplicativos no Google Play e App Store\\n\n" +
-        " - Geração/Assinatura de APKs e utilização do Google Developer Console\\n\n" +
-        " - Testes Alfa/Beta e publicação fracionada/percentual\\n\n" +
-        "Integração contínua e publicação automática\\n\n" +
-        " - Experiência com Travis/Fastlane e Jenkins\\n\n" +
-        " - Configuração de Flavors do mesmo projeto pelo Gradle\\n\n" +
-        " - Configuração de Build Schemes do mesmo projeto no Xcode\\n\n" +
+        " - Geração/Assinatura de APKs e utilização do Google Developer Console\n" +
+        " - Testes Alfa/Beta e publicação fracionada/percentual\n" +
+        "Integração contínua e publicação automática\n" +
+        " - Experiência com Travis/Fastlane e Jenkins\n" +
+        " - Configuração de Flavors do mesmo projeto pelo Gradle\n" +
+        " - Configuração de Build Schemes do mesmo projeto no Xcode\n" +
         " - Publicação automática dos Flavors/Schemes através do Fastlane",
       "");
 
     Snippet internRinga = new Snippet("Fev/2015 a Jan/2016 – Ringa (www.ringa.com.br)",
       "Empresa desenvolve aplicativos Android/iOS e Sistemas Web\nEstagiário em Desenvolvimento Mobile (Android/iOS)",
-      "Desenvolvimento nativo para sistemas Android e iOS.\\n\n" +
-        "Trabalho diário em sistemas baseados em UNIX como Linux e macOS. \\n\n" +
-        "Uso diário das IDEs Android Studio e Xcode.\\n\n" +
-        "Forte uso de linguagens orientadas a objetos\\n\n" +
+      "Desenvolvimento nativo para sistemas Android e iOS.\n" +
+        "Trabalho diário em sistemas baseados em UNIX como Linux e macOS.\n" +
+        "Uso diário das IDEs Android Studio e Xcode.\n" +
+        "Forte uso de linguagens orientadas a objetos\n" +
         " - Java e Objective-C",
       "");
 
