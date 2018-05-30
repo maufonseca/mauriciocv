@@ -8,11 +8,11 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class SnippetAdapter extends RecyclerView.Adapter<SnippetAdapter.ViewHolder> {
+public class SnippetAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
   private ArrayList<Snippet> snippetList;
+  private String title;
 
   public static class ViewHolder extends RecyclerView.ViewHolder {
-    // each data item is just a string in this case
     public TextView titleTextView, subtitleTextView, shortDescriptionTextView;
     public ViewHolder(View v) {
       super(v);
@@ -22,46 +22,75 @@ public class SnippetAdapter extends RecyclerView.Adapter<SnippetAdapter.ViewHold
     }
   }
 
-  public SnippetAdapter(ArrayList<Snippet> snippets) {
+  public static class TitleViewHolder extends RecyclerView.ViewHolder {
+    public TextView titleTextView;
+    public TitleViewHolder(View v) {
+      super(v);
+      titleTextView = v.findViewById(R.id.section_textview);
+
+    }
+  }
+
+  public SnippetAdapter(String title, ArrayList<Snippet> snippets) {
     snippetList = snippets;
+    this.title = title;
   }
 
   @Override
-  public SnippetAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-    // create a new view
-    View v = LayoutInflater.from(parent.getContext())
-      .inflate(R.layout.cell_snippet, parent, false);
-    ViewHolder vh = new ViewHolder(v);
-    return vh;
+  public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    if(viewType == 0) {
+      View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.cell_title, parent, false);
+      TitleViewHolder tvh = new TitleViewHolder(v);
+      return tvh;
+    } else {
+      View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.cell_snippet, parent, false);
+      ViewHolder vh = new ViewHolder(v);
+      return vh;
+    }
   }
 
   @Override
-  public void onBindViewHolder(ViewHolder holder, int position) {
-    if(snippetList.get(position).getTitle().isEmpty()) {
+  public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
+    if(position == 0) bindHeaderViewHolder((TitleViewHolder) holder);
+    else bindCellViewHolder((ViewHolder) holder, position-1);
+
+  }
+  public void bindHeaderViewHolder(TitleViewHolder holder) {
+    holder.titleTextView.setText(this.title);
+  }
+
+  public void bindCellViewHolder(ViewHolder holder, int index) {
+    if(snippetList.get(index).getTitle().isEmpty()) {
       holder.titleTextView.setVisibility(View.GONE);
     } else {
-      holder.titleTextView.setText(snippetList.get(position).getTitle());
+      holder.titleTextView.setText(snippetList.get(index).getTitle());
       holder.titleTextView.setVisibility(View.VISIBLE);
     }
 
-    if(snippetList.get(position).getSubtitle().isEmpty()) {
+    if(snippetList.get(index).getSubtitle().isEmpty()) {
       holder.subtitleTextView.setVisibility(View.GONE);
     } else {
-      holder.subtitleTextView.setText(snippetList.get(position).getSubtitle());
+      holder.subtitleTextView.setText(snippetList.get(index).getSubtitle());
       holder.subtitleTextView.setVisibility(View.VISIBLE);
     }
 
-    if(snippetList.get(position).getShortDescription().isEmpty()) {
+    if(snippetList.get(index).getShortDescription().isEmpty()) {
       holder.shortDescriptionTextView.setVisibility(View.GONE);
     } else {
-      holder.shortDescriptionTextView.setText(snippetList.get(position).getShortDescription());
+      holder.shortDescriptionTextView.setText(snippetList.get(index).getShortDescription());
       holder.shortDescriptionTextView.setVisibility(View.VISIBLE);
     }
   }
 
-  // Return the size of your dataset (invoked by the layout manager)
   @Override
   public int getItemCount() {
-    return snippetList.size();
+    return snippetList.size()+1; //+1 for header
+  }
+
+  @Override
+  public int getItemViewType(int position) {
+    //0 is header
+    if(position==0) return 0;
+    else return 1;
   }
 }
