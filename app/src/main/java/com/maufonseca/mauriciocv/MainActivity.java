@@ -1,5 +1,6 @@
 package com.maufonseca.mauriciocv;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -67,5 +68,12 @@ public class MainActivity extends AppCompatActivity {
   public void printClicked(View v) {
   }
   public void shareClicked(View v) {
+    //share the app
+    String text = "Desenvolvendo projetos Android/iOS? Baixe meu aplicativo/currículo e conheça meu trabalho: https://play.google.com/store/apps/details?id=com.maufonseca.mauriciocv";
+    final Intent emailIntent = new Intent(android.content.Intent.ACTION_SEND);
+    emailIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "Mauricio CV");
+    emailIntent.putExtra(android.content.Intent.EXTRA_TEXT, text);
+    emailIntent.setType("text/plain");
+    startActivity(Intent.createChooser(emailIntent, "Compartilhar usando: "));
   }
 }
