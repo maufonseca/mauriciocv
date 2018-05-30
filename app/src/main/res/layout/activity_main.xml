@@ -10,6 +10,7 @@
     android:layout_marginEnd="80dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
     <ScrollView
       android:layout_width="match_parent"
       android:layout_height="wrap_content">
@@ -17,28 +18,17 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <include 
-          android:id="@+id/include_synthesis"
-          layout="@layout/layout_synthesis"
-          android:visibility="visible"/>
-        <include
-          android:id="@+id/include_work"
-          layout="@layout/layout_work"
-          android:visibility="gone"/>
-        <include
-          android:id="@+id/include_school"
-          layout="@layout/layout_school"
-          android:visibility="gone"/>
-        <include
-          android:id="@+id/include_complement"
-          layout="@layout/layout_complement"
-          android:visibility="gone"/>
         <include
           android:id="@+id/include_contact"
           layout="@layout/layout_contact"
           android:visibility="gone"/>
       </LinearLayout>
     </ScrollView>
+
+    <android.support.v7.widget.RecyclerView
+      android:id="@+id/snippet_recyclerview"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"/>
   </FrameLayout>
 
   <FrameLayout

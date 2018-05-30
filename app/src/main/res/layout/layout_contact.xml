@@ -8,19 +8,19 @@
   android:padding="8dp"
   tools:context=".MainActivity">
     <TextView
-      android:text="Maurício Fonseca"
+      android:text="@string/worker_name"
       android:textStyle="bold"
       android:textSize="24sp"
       android:layout_width="match_parent"
       android:layout_height="wrap_content" />
     <TextView
-      android:text="Mobile Developer"
+      android:text="@string/mobile_developer"
       android:textStyle="bold"
       android:layout_width="match_parent"
       android:layout_height="wrap_content" />
 
     <TextView
-      android:text="Contato"
+      android:text="@string/contact"
       android:textSize="24sp"
       android:textStyle="bold"
       android:layout_marginTop="8dp"

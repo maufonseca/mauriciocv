@@ -1,3 +1,16 @@
 <resources>
   <string name="app_name">Mauricio CV</string>
+  <string name="worker_name">Maurício Fonseca</string>
+  <string name="mobile_developer">Desenvolvedor Mobile</string>
+  <!--Synthesis-->
+  <string name="qualification_synthesis">Síntese de Qualificações</string>
+  <!--Work-->
+  <string name="work_history">Histórico Profissional</string>
+  <!--School-->
+  <string name="academic_formation">Formação Acadêmica</string>
+  <!--Complement-->
+  <string name="complementary_activities">Atividades Complementares</string>
+  <!--Contact-->
+  <string name="contact">Contato</string>
+
 </resources>
