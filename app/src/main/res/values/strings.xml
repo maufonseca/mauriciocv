@@ -14,6 +14,14 @@
   <string name="contact">Contato</string>
   <!--Dev-->
   <string name="about">Sobre este app</string>
+  <string name="explanation">Este aplicativo foi desenvolvido utilizando o princípio do KISS (Keep-It-Simple-Stupid).
+A arquitetura clean foi utilizada brevemente porém sem criar muitos rodeios, uma vez que o app é pequeno.
+Não foi utilizada nenhuma biblioteca externa e o app é nativo Android, em Java, para evitar um tamanho excessivo em bytes!
+Pouco tempo de desenvolvimento foi empregado antes da publicação na Play Store, afinal é melhor falhar rápido do que demorado.</string>
+  <string name="github_call">O código está aberto no GitHub:</string>
+  <string name="email_call">Sugestões e críticas ou desejos podem ser enviados por e-mail: </string>
+  <string name="rating_call">Avalie este aplicativo na Play Store e deixe seu comentário pelo link:</string>
+  <string name="thanks">Muito obrigado por ter chegado até aqui!</string>
   <!--Print-->
   <string name="print">Baixar CV em PDF</string>
   <!--Share-->

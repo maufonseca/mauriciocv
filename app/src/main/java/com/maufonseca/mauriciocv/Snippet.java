@@ -135,8 +135,8 @@ public class Snippet {
 
   public static ArrayList<Snippet> getSynthesis() {
     ArrayList<Snippet> synthesis = new ArrayList<>();
-    Snippet qa = new Snippet("",
-      "",
+    Snippet qa = new Snippet("Mauricio Fonseca",
+      "Engenheiro de Software Mobile",
       "Prática em QA, organização de equipes de desenvolvimento guiado a testes e utilização de ferramentas de automatização no processo produtivo de aplicativos mobile e Web utilizando as linguagens Groovy e Gherkin",
       "");
     synthesis.add(qa);

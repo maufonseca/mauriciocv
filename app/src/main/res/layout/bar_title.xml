@@ -7,9 +7,11 @@
 
   <ImageView
     android:src="@drawable/twotone_close_black_48"
+    android:tint="#666"
     android:padding="8dp"
     android:layout_width="56dp"
     android:layout_height="56dp"
+    android:background="@drawable/ripple_close_button"
     android:onClick="finishClicked"/>
   <TextView
     android:id="@+id/title_textview"
