@@ -16,6 +16,13 @@
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
+    <activity android:name=".DevActivity" />
+    <activity android:name=".WorkActivity" />
+    <activity android:name=".AppsActivity" />
+    <activity android:name=".ComplementActivity" />
+    <activity android:name=".SchoolActivity" />
+    <activity android:name=".ContactActivity" />
+    <activity android:name=".PrintActivity"></activity>
   </application>
 
 </manifest>

@@ -60,6 +60,13 @@
         <ImageView
           android:padding="16dp"
           android:background="@drawable/ripple_bar"
+          android:src="@drawable/twotone_smartphone_black_48"
+          android:layout_width="match_parent"
+          android:layout_height="80dp"
+          android:onClick="appsClicked"/>
+        <ImageView
+          android:padding="16dp"
+          android:background="@drawable/ripple_bar"
           android:src="@drawable/twotone_school_black_48"
           android:layout_width="match_parent"
           android:layout_height="80dp"
@@ -78,6 +85,27 @@
           android:layout_width="match_parent"
           android:layout_height="80dp"
           android:onClick="contactClicked"/>
+        <ImageView
+          android:padding="16dp"
+          android:background="@drawable/ripple_bar"
+          android:src="@drawable/twotone_print_black_48"
+          android:layout_width="match_parent"
+          android:layout_height="80dp"
+          android:onClick="printClicked"/>
+        <ImageView
+          android:padding="16dp"
+          android:background="@drawable/ripple_bar"
+          android:src="@drawable/twotone_share_black_48"
+          android:layout_width="match_parent"
+          android:layout_height="80dp"
+          android:onClick="shareClicked"/>
+        <ImageView
+          android:padding="16dp"
+          android:background="@drawable/ripple_bar"
+          android:src="@drawable/twotone_code_black_48"
+          android:layout_width="match_parent"
+          android:layout_height="80dp"
+          android:onClick="devClicked"/>
 
       </LinearLayout>
     </ScrollView>

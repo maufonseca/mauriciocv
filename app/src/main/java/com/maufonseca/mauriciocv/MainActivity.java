@@ -46,6 +46,8 @@ public class MainActivity extends AppCompatActivity {
     snippetRecyclerView.setVisibility(View.VISIBLE);
     contactLayout.setVisibility(View.GONE);
   }
+  public void appsClicked(View v) {
+  }
   public void schoolClicked(View v) {
     snippetRecyclerView.setAdapter(new SnippetAdapter(Snippet.getSchool()));
     snippetRecyclerView.setVisibility(View.VISIBLE);
@@ -59,5 +61,11 @@ public class MainActivity extends AppCompatActivity {
   public void contactClicked(View v) {
     snippetRecyclerView.setVisibility(View.GONE);
     contactLayout.setVisibility(View.VISIBLE);
+  }
+  public void devClicked(View v) {
+  }
+  public void printClicked(View v) {
+  }
+  public void shareClicked(View v) {
   }
 }

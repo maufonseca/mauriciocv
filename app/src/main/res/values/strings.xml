@@ -12,5 +12,13 @@
   <string name="complementary_activities">Atividades Complementares</string>
   <!--Contact-->
   <string name="contact">Contato</string>
+  <!--Dev-->
+  <string name="about">Sobre este app</string>
+  <!--Print-->
+  <string name="print">Baixar CV em PDF</string>
+  <!--Share-->
+  <string name="share">Compartilhe este App</string>
+  <!--Apps-->
+  <string name="apps">Portfolio de apps</string>
 
 </resources>
