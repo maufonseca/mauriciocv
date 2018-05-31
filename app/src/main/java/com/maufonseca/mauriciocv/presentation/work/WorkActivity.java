@@ -1,13 +1,15 @@
-package com.maufonseca.mauriciocv;
+package com.maufonseca.mauriciocv.presentation.work;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class PrintActivity extends AppCompatActivity {
+import com.maufonseca.mauriciocv.R;
+
+public class WorkActivity extends AppCompatActivity {
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    setContentView(R.layout.activity_print);
+    setContentView(R.layout.activity_work);
   }
 }

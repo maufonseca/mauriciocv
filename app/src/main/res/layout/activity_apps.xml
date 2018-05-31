@@ -1,26 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
+<android.support.v4.widget.NestedScrollView
   xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:tools="http://schemas.android.com/tools"
   android:layout_width="match_parent"
   android:layout_height="wrap_content"
-  tools:context=".AppsActivity">
+  tools:context=".presentation.myapps.AppsActivity">
   <LinearLayout
+    android:focusable="true"
+    android:focusableInTouchMode="true"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
     <include layout="@layout/bar_title"/>
-    <TextView
-
-      android:layout_marginStart="16dp"
-      android:layout_marginEnd="16dp"
-      android:layout_marginTop="24dp"
-      android:layout_gravity="center"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:text="Nem tudo acontece da noite para o dia. Em breve aqui os aplicativos desenvolvidos por mim nos últimos 4 anos como profissional."/>
+    <android.support.v7.widget.RecyclerView
+      android:focusable="false"
+      android:layout_marginTop="16dp"
+      android:id="@+id/apps_recyclerview"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"/>
 
   </LinearLayout>
 
-</ScrollView>
+</android.support.v4.widget.NestedScrollView>

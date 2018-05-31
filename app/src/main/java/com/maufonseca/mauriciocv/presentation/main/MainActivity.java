@@ -1,4 +1,4 @@
-package com.maufonseca.mauriciocv;
+package com.maufonseca.mauriciocv.presentation.main;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -10,6 +10,11 @@ import android.text.method.LinkMovementMethod;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import com.maufonseca.mauriciocv.presentation.development.DevActivity;
+import com.maufonseca.mauriciocv.R;
+import com.maufonseca.mauriciocv.model.Snippet;
+import com.maufonseca.mauriciocv.presentation.myapps.AppsActivity;
 
 import java.util.ArrayList;
 

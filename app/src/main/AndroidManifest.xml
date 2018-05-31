@@ -9,20 +9,21 @@
     android:roundIcon="@mipmap/ic_launcher_round"
     android:supportsRtl="true"
     android:theme="@style/AppTheme">
-    <activity android:name=".MainActivity">
+    <activity android:name=".presentation.main.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
 
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
-    <activity android:name=".DevActivity" />
-    <activity android:name=".WorkActivity" />
-    <activity android:name=".AppsActivity" />
-    <activity android:name=".ComplementActivity" />
-    <activity android:name=".SchoolActivity" />
-    <activity android:name=".ContactActivity" />
-    <activity android:name=".PrintActivity"></activity>
+    <activity android:name=".presentation.development.DevActivity" />
+    <activity android:name=".presentation.work.WorkActivity" />
+    <activity android:name=".presentation.myapps.AppsActivity" />
+    <activity android:name=".presentation.complement.ComplementActivity" />
+    <activity android:name=".presentation.school.SchoolActivity" />
+    <activity android:name=".presentation.contact.ContactActivity" />
+    <activity android:name=".presentation.print.PrintActivity" />
+    <activity android:name=".presentation.snippetdetail.SnippetDetailActivity"></activity>
   </application>
 
 </manifest>

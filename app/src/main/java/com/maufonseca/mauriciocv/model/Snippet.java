@@ -1,4 +1,4 @@
-package com.maufonseca.mauriciocv;
+package com.maufonseca.mauriciocv.model;
 
 import java.util.ArrayList;
 
@@ -136,7 +136,7 @@ public class Snippet {
   public static ArrayList<Snippet> getSynthesis() {
     ArrayList<Snippet> synthesis = new ArrayList<>();
     Snippet qa = new Snippet("Mauricio Fonseca",
-      "Engenheiro de Software Mobile",
+      "Engenheiro de Software",
       "Prática em QA, organização de equipes de desenvolvimento guiado a testes e utilização de ferramentas de automatização no processo produtivo de aplicativos mobile e Web utilizando as linguagens Groovy e Gherkin",
       "");
     synthesis.add(qa);
@@ -182,6 +182,12 @@ public class Snippet {
       "Experiência em publicações de aplicativos na Play Store e App Store, bem como técnicas de integração contínua, publicação contínua e configuração de variações do mesmo projeto através de Flavors e Build Schemes",
       "");
     synthesis.add(pub);
+
+    Snippet english = new Snippet("",
+      "",
+      "Inglês avançado para leitura, escrita e conversação",
+      "");
+    synthesis.add(english);
     return synthesis;
   }
 

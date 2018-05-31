@@ -1,7 +1,7 @@
 <resources>
   <string name="app_name">Mauricio CV</string>
   <string name="worker_name">Maurício Fonseca</string>
-  <string name="mobile_developer">Desenvolvedor Mobile</string>
+  <string name="mobile_developer">Engenheiro de Software</string>
   <!--Synthesis-->
   <string name="qualification_synthesis">Síntese de Qualificações</string>
   <!--Work-->

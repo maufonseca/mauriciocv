@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:padding="8dp"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content">
+  <LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+      android:id="@+id/title_textview"
+      android:text="Title"
+      android:textSize="18dp"
+      android:textStyle="bold"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content" />
+    <TextView
+      android:id="@+id/android_label"
+      android:text="Android"
+      android:paddingStart="4dp"
+      android:paddingEnd="4dp"
+      android:background="@color/colorPrimary"
+      android:layout_marginStart="8dp"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content" />
+    <TextView
+      android:id="@+id/ios_label"
+      android:text="iOS"
+      android:background="@color/colorPrimary"
+      android:paddingStart="4dp"
+      android:paddingEnd="4dp"
+      android:layout_marginStart="8dp"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content" />
+  </LinearLayout>
+  <TextView
+    android:id="@+id/subtitle_textview"
+    android:text="Subtitle"
+    android:textStyle="bold|italic"
+    android:layout_marginBottom="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+  <LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+      android:id="@+id/playstore_textview"
+      android:background="@drawable/ripple_close_button"
+      android:layout_weight="1"
+      android:text="Ver na Play Store"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content" />
+    <TextView
+      android:id="@+id/itunes_textview"
+      android:background="@drawable/ripple_close_button"
+      android:layout_weight="1"
+      android:text="Ver na iTunes Store"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content" />
+  </LinearLayout>
+  <TextView
+    android:layout_marginTop="8dp"
+    android:id="@+id/short_description_textview"
+    android:text="Short Description"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+</LinearLayout>

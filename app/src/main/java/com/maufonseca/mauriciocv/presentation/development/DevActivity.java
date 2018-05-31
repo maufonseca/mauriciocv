@@ -1,4 +1,4 @@
-package com.maufonseca.mauriciocv;
+package com.maufonseca.mauriciocv.presentation.development;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -6,6 +6,8 @@ import android.text.Html;
 import android.text.method.LinkMovementMethod;
 import android.view.View;
 import android.widget.TextView;
+
+import com.maufonseca.mauriciocv.R;
 
 public class DevActivity extends AppCompatActivity {
 

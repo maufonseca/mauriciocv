@@ -1,10 +1,13 @@
-package com.maufonseca.mauriciocv;
+package com.maufonseca.mauriciocv.presentation.main;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import com.maufonseca.mauriciocv.R;
+import com.maufonseca.mauriciocv.model.Snippet;
 
 import java.util.ArrayList;
 
