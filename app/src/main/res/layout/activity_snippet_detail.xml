@@ -25,12 +25,11 @@
         android:onClick="backTouched"/>
       <TextView
         android:id="@+id/title_textview"
-        android:paddingStart="24dp"
+        android:paddingStart="32dp"
         android:paddingEnd="8dp"
         android:paddingTop="8dp"
         android:paddingBottom="8dp"
         android:textSize="18sp"
-        android:textStyle="bold"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     </LinearLayout>

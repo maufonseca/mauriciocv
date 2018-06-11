@@ -18,23 +18,10 @@ public class WorkHistoryRequester {
   //Let it be here while not getting it from api
   public static ArrayList<Snippet> getWorkHistory() {
     ArrayList<Snippet> work = new ArrayList<>();
-    Snippet qaRinga = new Snippet("Jan/2018 ao Presente – Ringa (www.ringa.com.br)",
-      "Empresa desenvolve aplicativos Android/iOS e Sistemas Web\nEngenheiro de QA (Android/iOS/Web)",
-      "Responsável pela implantação da área de QA na empresa com testes automatizados utilizando Jenkins e Docker.\n" +
-        "Extração de requisitos de sistemas legado por análise exploratória\n" +
-        "Manutenção de documentação ágil sobre o sistema através de mapas mentais com a ferramenta XMind\n" +
-        "Elaboração de casos de teste na linguagem Gherkin e supervisão da execução de BDD em projetos Mobile/Web\n" +
-        "Automatização de testes BDD utilizando o Katalon Studio na linguagem Groovy\n" +
-        "Prática com Selenium IDE/Appium\n" +
-        "Configuração da execução periódica dos testes pela ferramenta Jenkins integrada com repositório git em um container do Docker\n" +
-        "Aplicação de testes em ambiente de desenvolvimento Ágil\n" +
-        "Testes de desempenho de sistemas Web/Mobile\n" +
-        "Análise de melhoria/regressão nos sistemas desenvolvidos\n" +
-        "Integração de ferramentas de teste com o software JIRA para análises de qualidade do desenvolvimento e da equipe",
-      "");
 
-    Snippet devRinga = new Snippet("Jan/2016 a Dez/2017 – Ringa (www.ringa.com.br)",
-      "Empresa desenvolve aplicativos Android/iOS e Sistemas Web\nDesenvolvedor Mobile (Android/iOS)",
+    Snippet devRinga = new Snippet("Jan/2016 ao presente – Ringa (www.ringa.com.br)",
+      "Desenvolvedor Mobile (Android/iOS)",
+      "Aprimoramento do desenvolvimento, teste e manutenção diários de aplicativos iOS e Android, utilizando metodologias ágeis",
       "Análise e Manutenção de aplicativos já publicados\n" +
         "Supervisão e instrução de estagiários da empresa no desenvolvimento mobile\n" +
         "Interação com clientes da empresa para buscar soluções para os aplicativos\n" +
@@ -87,20 +74,33 @@ public class WorkHistoryRequester {
         " - Experiência com Travis/Fastlane e Jenkins\n" +
         " - Configuração de Flavors do mesmo projeto pelo Gradle\n" +
         " - Configuração de Build Schemes do mesmo projeto no Xcode\n" +
-        " - Publicação automática dos Flavors/Schemes através do Fastlane",
-      "");
+        " - Publicação automática dos Flavors/Schemes através do Fastlane");
+
+    Snippet qaRinga = new Snippet("Jan/2018 ao Presente – Ringa (www.ringa.com.br)",
+      "Engenheiro de QA (Android/iOS/Web)",
+      "Responsável pelo planejamento e implantação de QA na empresa, introduzindo testes automatizados de comportamento a Web e Mobile",
+      "Extração de requisitos de sistemas legado por análise exploratória\n" +
+        "Manutenção de documentação ágil sobre o sistema através de mapas mentais com a ferramenta XMind\n" +
+        "Elaboração de casos de teste na linguagem Gherkin e supervisão da execução de BDD em projetos Mobile/Web\n" +
+        "Automatização de testes BDD utilizando o Katalon Studio na linguagem Groovy\n" +
+        "Prática com Selenium IDE/Appium\n" +
+        "Configuração da execução periódica dos testes pela ferramenta Jenkins integrada com repositório git em um container do Docker\n" +
+        "Aplicação de testes em ambiente de desenvolvimento Ágil\n" +
+        "Testes de desempenho de sistemas Web/Mobile\n" +
+        "Análise de melhoria/regressão nos sistemas desenvolvidos\n" +
+        "Integração de ferramentas de teste com o software JIRA para análises de qualidade do desenvolvimento e da equipe");
 
     Snippet internRinga = new Snippet("Fev/2015 a Jan/2016 – Ringa (www.ringa.com.br)",
-      "Empresa desenvolve aplicativos Android/iOS e Sistemas Web\nEstagiário em Desenvolvimento Mobile (Android/iOS)",
+      "Estagiário em Desenvolvimento Mobile (Android/iOS)",
+      "Aprendizado do uso de Objective-C e Java para criar aplicativos iOS e Android, respectivamente",
       "Desenvolvimento nativo para sistemas Android e iOS.\n" +
         "Trabalho diário em sistemas baseados em UNIX como Linux e macOS.\n" +
         "Uso diário das IDEs Android Studio e Xcode.\n" +
         "Forte uso de linguagens orientadas a objetos\n" +
-        " - Java e Objective-C",
-      "");
+        " - Java e Objective-C");
 
-    work.add(qaRinga);
     work.add(devRinga);
+    work.add(qaRinga);
     work.add(internRinga);
     return work;
   }
