@@ -20,7 +20,7 @@ public class AppsActivity extends AppCompatActivity {
     titleView.setText(getString(R.string.apps));
     RecyclerView appsRecyclerView = findViewById(R.id.apps_recyclerview);
     appsRecyclerView.setLayoutManager(new LinearLayoutManager(this));
-    appsRecyclerView.setAdapter(new AppSnippetAdapter(AppSnippet.getApps()));
+    appsRecyclerView.setAdapter(new AppSnippetAdapter(this, AppSnippet.getApps()));
     appsRecyclerView.setNestedScrollingEnabled(false);
   }
 

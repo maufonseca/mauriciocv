@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
+  android:id="@+id/cell_layout"
   xmlns:android="http://schemas.android.com/apk/res/android"
   android:padding="8dp"
   android:orientation="vertical"
+  android:background="@drawable/ripple_white_to_grey"
   android:layout_width="match_parent"
   android:layout_height="wrap_content">
   <LinearLayout
@@ -49,14 +51,12 @@
     android:layout_height="wrap_content">
     <TextView
       android:id="@+id/playstore_textview"
-      android:background="@drawable/ripple_close_button"
       android:layout_weight="1"
       android:text="Ver na Play Store"
       android:layout_width="match_parent"
       android:layout_height="wrap_content" />
     <TextView
       android:id="@+id/itunes_textview"
-      android:background="@drawable/ripple_close_button"
       android:layout_weight="1"
       android:text="Ver na iTunes Store"
       android:layout_width="match_parent"

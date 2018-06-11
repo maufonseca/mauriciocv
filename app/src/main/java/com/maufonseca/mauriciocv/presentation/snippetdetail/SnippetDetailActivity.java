@@ -18,8 +18,8 @@ public class SnippetDetailActivity extends AppCompatActivity {
     Snippet currentSnippet = getIntent().getParcelableExtra("snippet");
     TextView titleView = findViewById(R.id.title_textview);
     TextView bodyView = findViewById(R.id.body_textview);
-    titleView.setText(currentSnippet.getTitle());
-    bodyView.setText(currentSnippet.getShortDescription());
+    titleView.setText(currentSnippet.getShortDescription());
+    bodyView.setText(currentSnippet.getLongDescription());
 
   }
 

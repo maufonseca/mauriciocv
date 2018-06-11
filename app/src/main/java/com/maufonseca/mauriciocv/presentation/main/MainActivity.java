@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
     snippetRecyclerView = findViewById(R.id.snippet_recyclerview);
     contactLayout = findViewById(R.id.include_contact);
 
-    snippetRecyclerView.setAdapter(new SnippetAdapter("", new ArrayList<Snippet>()));
+    snippetRecyclerView.setAdapter(new SnippetAdapter(this, "", new ArrayList<Snippet>()));
     snippetRecyclerView.setLayoutManager(new LinearLayoutManager(this));
 
     TextView email = findViewById(R.id.email_textview);
@@ -45,12 +45,12 @@ public class MainActivity extends AppCompatActivity {
   }
 
   public void synthesisClicked(View v) {
-    snippetRecyclerView.setAdapter(new SnippetAdapter(getString(R.string.qualification_synthesis), Snippet.getSynthesis()));
+    snippetRecyclerView.setAdapter(new SnippetAdapter(this, getString(R.string.qualification_synthesis), Snippet.getSynthesis()));
     snippetRecyclerView.setVisibility(View.VISIBLE);
     contactLayout.setVisibility(View.GONE);
   }
   public void workClicked(View v) {
-    snippetRecyclerView.setAdapter(new SnippetAdapter(getString(R.string.work_history), WorkHistoryRequester.getWorkHistory()));
+    snippetRecyclerView.setAdapter(new SnippetAdapter(this, getString(R.string.work_history), WorkHistoryRequester.getWorkHistory()));
     snippetRecyclerView.setVisibility(View.VISIBLE);
     contactLayout.setVisibility(View.GONE);
   }
@@ -59,12 +59,12 @@ public class MainActivity extends AppCompatActivity {
     startActivity(devIntent);
   }
   public void schoolClicked(View v) {
-    snippetRecyclerView.setAdapter(new SnippetAdapter(getString(R.string.academic_formation), Snippet.getSchool()));
+    snippetRecyclerView.setAdapter(new SnippetAdapter(this, getString(R.string.academic_formation), Snippet.getSchool()));
     snippetRecyclerView.setVisibility(View.VISIBLE);
     contactLayout.setVisibility(View.GONE);
   }
   public void complementClicked(View v) {
-    snippetRecyclerView.setAdapter(new SnippetAdapter(getString(R.string.complementary_activities), Snippet.getComplement()));
+    snippetRecyclerView.setAdapter(new SnippetAdapter(this, getString(R.string.complementary_activities), Snippet.getComplement()));
     snippetRecyclerView.setVisibility(View.VISIBLE);
     contactLayout.setVisibility(View.GONE);
   }
