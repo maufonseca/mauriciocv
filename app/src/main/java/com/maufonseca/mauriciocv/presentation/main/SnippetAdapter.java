@@ -4,6 +4,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.maufonseca.mauriciocv.R;
@@ -17,8 +18,10 @@ public class SnippetAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
 
   public static class ViewHolder extends RecyclerView.ViewHolder {
     public TextView titleTextView, subtitleTextView, shortDescriptionTextView;
+    public LinearLayout cellLayout;
     public ViewHolder(View v) {
       super(v);
+      cellLayout = v.findViewById(R.id.cell_layout);
       titleTextView = v.findViewById(R.id.title_textview);
       subtitleTextView = v.findViewById(R.id.subtitle_textview);
       shortDescriptionTextView = v.findViewById(R.id.short_description_textview);
@@ -63,6 +66,7 @@ public class SnippetAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
   }
 
   public void bindCellViewHolder(ViewHolder holder, int index) {
+    holder.cellLayout.setTag(snippetList.get(index));
     if(snippetList.get(index).getTitle().isEmpty()) {
       holder.titleTextView.setVisibility(View.GONE);
     } else {

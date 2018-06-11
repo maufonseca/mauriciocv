@@ -11,10 +11,12 @@ import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.maufonseca.mauriciocv.infrastructure.WorkHistoryRequester;
 import com.maufonseca.mauriciocv.presentation.development.DevActivity;
 import com.maufonseca.mauriciocv.R;
 import com.maufonseca.mauriciocv.model.Snippet;
 import com.maufonseca.mauriciocv.presentation.myapps.AppsActivity;
+import com.maufonseca.mauriciocv.presentation.snippetdetail.SnippetDetailActivity;
 
 import java.util.ArrayList;
 
@@ -48,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
     contactLayout.setVisibility(View.GONE);
   }
   public void workClicked(View v) {
-    snippetRecyclerView.setAdapter(new SnippetAdapter(getString(R.string.work_history), Snippet.getWorkHistory()));
+    snippetRecyclerView.setAdapter(new SnippetAdapter(getString(R.string.work_history), WorkHistoryRequester.getWorkHistory()));
     snippetRecyclerView.setVisibility(View.VISIBLE);
     contactLayout.setVisibility(View.GONE);
   }
@@ -83,4 +85,18 @@ public class MainActivity extends AppCompatActivity {
     emailIntent.setType("text/plain");
     startActivity(Intent.createChooser(emailIntent, "Compartilhar usando: "));
   }
+
+  public void snippetTouched(View v) {
+    Snippet touchedSnippet;
+    try { //trying to get snippet injected as view tag
+      touchedSnippet = (Snippet) v.getTag();
+    } catch (Exception e) {
+      touchedSnippet = new Snippet();
+    }
+    Intent intent = new Intent(this, SnippetDetailActivity.class);
+    intent.putExtra( "snippet", touchedSnippet);
+    startActivity(intent);
+
+  }
+
 }

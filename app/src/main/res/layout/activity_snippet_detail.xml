@@ -1,9 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:app="http://schemas.android.com/apk/res-auto"
   xmlns:tools="http://schemas.android.com/tools"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
   tools:context=".presentation.snippetdetail.SnippetDetailActivity">
 
-</android.support.constraint.ConstraintLayout>
+  <LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+      android:orientation="vertical"
+      android:background="@color/colorPrimary"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+      <ImageView
+        android:padding="8dp"
+        android:tint="#666"
+        android:background="@drawable/ripple_close_header"
+        android:src="@drawable/twotone_arrow_back_black_48"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:onClick="backTouched"/>
+      <TextView
+        android:id="@+id/title_textview"
+        android:padding="8dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+      android:id="@+id/body_textview"
+      android:padding="8dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content" />
+  </LinearLayout>
+</ScrollView>
