@@ -74,7 +74,7 @@ public class AppSnippet extends Snippet {
       "Tempo de trabalho no aplicativo: 5 meses",
       "Este aplicativo foi feito para uma clínica de radiologia veterinária " +
         "e serve para que os donos dos animais ou veterinários responsáveis " +
-        "consigam visualizar laudos e imagens de Raio-X publicados pela clínica. No" +
+        "consigam visualizar laudos e imagens de Raio-X publicados pela clínica. No " +
         "desenvolvimento utilizou-se Arquitetura Clean com chamadas à API pela biblioteca Retrofit(Android) e Moya (iOS).",
       "",
       "https://play.google.com/store/apps/details?id=br.com.ringa.cedimtech",
@@ -84,7 +84,7 @@ public class AppSnippet extends Snippet {
       false);
     apps.add(cedim);
 
-    AppSnippet whatsgood = new AppSnippet("WhatsGood Marketplace",
+    AppSnippet whatsgood = new AppSnippet("WhatsGood",
       "Tempo de trabalho no aplicativo: 1 ano e 2 meses",
       "Este é um aplicativo que visa facilitar a compra e venda " +
         "de produtos agrícolas entre fazendeiros, mercadores e consumidores " +

@@ -24,7 +24,7 @@ public class AppsActivity extends AppCompatActivity {
     appsRecyclerView.setNestedScrollingEnabled(false);
   }
 
-  public void finishTouched(View v) {
+  public void backTouched(View v) {
     finish();
   }
 }

@@ -114,16 +114,17 @@ public class Snippet implements Parcelable {
 
   public static ArrayList<Snippet> getSchool() {
     ArrayList<Snippet> school = new ArrayList<>();
-    Snippet mba = new Snippet("MBA em Gestão de Projetos – Abr/2018 ao Presente",
-      "USP – Campus de Piracicaba/SP",
-      "",
-      "");
+    Snippet mba = new Snippet("USP - Abr/2018 ao Presente",
+      "Campus de Piracicaba/SP",
+      "MBA em Gestão de Projetos",
+      "Conclusão em Out/2019");
     school.add(mba);
 
-    Snippet engComp = new Snippet("Graduação em Engenharia de Computação – Concluído em 2017",
-      "USP – Campus de São Carlos/SP",
-      "TCC publicado em 2016: “Teste de software em aplicativos móveis no ambiente empresarial: um relato de experiência”",
-      "");
+    Snippet engComp = new Snippet("USP - 2008 a 2017",
+      "Campus de São Carlos/SP",
+      "Graduação em Engenharia de Computação",
+      "TCC publicado em 2016: “Teste de software em aplicativos móveis no ambiente empresarial: um relato de experiência”\n"+
+    "Conclusão em Nov/2017");
     school.add(engComp);
     return school;
   }

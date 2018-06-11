@@ -7,9 +7,10 @@
 
   <TextView
     android:id="@+id/section_textview"
-    android:background="@color/colorPrimary"
+    android:background="@color/md_amber_900"
     android:padding="8dp"
     android:text="Title"
+    android:textColor="@color/md_white_1000"
     android:textSize="18sp"
     android:textStyle="bold"
     android:layout_width="match_parent"

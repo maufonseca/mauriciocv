@@ -19,7 +19,7 @@ public class WorkHistoryRequester {
   public static ArrayList<Snippet> getWorkHistory() {
     ArrayList<Snippet> work = new ArrayList<>();
 
-    Snippet devRinga = new Snippet("Jan/2016 ao presente – Ringa (www.ringa.com.br)",
+    Snippet devRinga = new Snippet("Jan/2016 ao presente\n" + "Ringa (www.ringa.com.br)",
       "Desenvolvedor Mobile (Android/iOS)",
       "Aprimoramento do desenvolvimento, teste e manutenção diários de aplicativos iOS e Android, utilizando metodologias ágeis",
       "Análise e Manutenção de aplicativos já publicados\n" +
@@ -76,7 +76,7 @@ public class WorkHistoryRequester {
         " - Configuração de Build Schemes do mesmo projeto no Xcode\n" +
         " - Publicação automática dos Flavors/Schemes através do Fastlane");
 
-    Snippet qaRinga = new Snippet("Jan/2018 ao Presente – Ringa (www.ringa.com.br)",
+    Snippet qaRinga = new Snippet("Jan/2018 ao Presente\n" + "Ringa (www.ringa.com.br)",
       "Engenheiro de QA (Android/iOS/Web)",
       "Responsável pelo planejamento e implantação de QA na empresa, introduzindo testes automatizados de comportamento a Web e Mobile",
       "Extração de requisitos de sistemas legado por análise exploratória\n" +
@@ -90,7 +90,7 @@ public class WorkHistoryRequester {
         "Análise de melhoria/regressão nos sistemas desenvolvidos\n" +
         "Integração de ferramentas de teste com o software JIRA para análises de qualidade do desenvolvimento e da equipe");
 
-    Snippet internRinga = new Snippet("Fev/2015 a Jan/2016 – Ringa (www.ringa.com.br)",
+    Snippet internRinga = new Snippet("Fev/2015 a Jan/2016\n" + "Ringa (www.ringa.com.br)",
       "Estagiário em Desenvolvimento Mobile (Android/iOS)",
       "Aprendizado do uso de Objective-C e Java para criar aplicativos iOS e Android, respectivamente",
       "Desenvolvimento nativo para sistemas Android e iOS.\n" +

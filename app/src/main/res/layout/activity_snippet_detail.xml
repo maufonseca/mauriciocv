@@ -10,33 +10,17 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
-    <LinearLayout
-      android:orientation="vertical"
-      android:background="@color/md_grey_100"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content">
-      <ImageView
-        android:padding="8dp"
-        android:tint="#666"
-        android:background="@drawable/ripple_grey_to_grey"
-        android:src="@drawable/twotone_arrow_back_black_48"
-        android:layout_width="56dp"
-        android:layout_height="56dp"
-        android:onClick="backTouched"/>
-      <TextView
-        android:id="@+id/title_textview"
-        android:paddingStart="32dp"
-        android:paddingEnd="8dp"
-        android:paddingTop="8dp"
-        android:paddingBottom="8dp"
-        android:textSize="18sp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-    </LinearLayout>
+
+    <include layout="@layout/bar_title"/>
 
     <TextView
       android:id="@+id/body_textview"
-      android:padding="8dp"
+      android:lineSpacingExtra="2sp"
+      android:textSize="18sp"
+      android:paddingStart="16dp"
+      android:paddingEnd="16dp"
+      android:paddingTop="8dp"
+      android:paddingBottom="16dp"
       android:layout_width="match_parent"
       android:layout_height="wrap_content" />
   </LinearLayout>

@@ -2,27 +2,25 @@
 <LinearLayout
   xmlns:android="http://schemas.android.com/apk/res/android"
   android:orientation="vertical"
+  android:background="@color/md_amber_900"
   android:layout_width="match_parent"
   android:layout_height="wrap_content">
-
   <ImageView
-    android:src="@drawable/twotone_close_black_48"
-    android:tint="#666"
-    android:padding="8dp"
-    android:layout_width="56dp"
-    android:layout_height="56dp"
-    android:background="@drawable/ripple_close_button"
-    android:onClick="finishTouched"/>
+    android:padding="4dp"
+    android:layout_marginStart="8dp"
+    android:tint="@color/md_white_1000"
+    android:src="@drawable/twotone_arrow_back_black_48"
+    android:layout_width="48dp"
+    android:layout_height="48dp"
+    android:onClick="backTouched"/>
   <TextView
     android:id="@+id/title_textview"
-    android:layout_gravity="center"
-    android:text="Titulo"
-    android:textAlignment="center"
-    android:singleLine="true"
-    android:maxLines="2"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:paddingTop="8dp"
+    android:paddingBottom="16dp"
+    android:textColor="@color/md_white_1000"
     android:textSize="18sp"
-    android:textStyle="bold"
     android:layout_width="match_parent"
     android:layout_height="wrap_content" />
-
 </LinearLayout>

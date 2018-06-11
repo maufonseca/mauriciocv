@@ -28,7 +28,7 @@ public class DevActivity extends AppCompatActivity {
     playstore.setMovementMethod(LinkMovementMethod.getInstance());
   }
 
-  public void finishTouched(View v) {
+  public void backTouched(View v) {
     finish();
   }
 }
