@@ -45,7 +45,7 @@
         <ImageView
           android:padding="16dp"
           android:background="@drawable/ripple_bar"
-          android:src="@drawable/twotone_face_black_48"
+          android:src="@drawable/twotone_mauricio_black_48"
           android:layout_width="match_parent"
           android:layout_height="80dp"
           android:contentDescription="@string/qualification_synthesis"
