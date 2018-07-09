@@ -11,20 +11,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ScrollView
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content">
-      <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <include
-          android:id="@+id/include_contact"
-          layout="@layout/layout_contact"
-          android:visibility="gone"/>
-      </LinearLayout>
-    </ScrollView>
-
     <android.support.v7.widget.RecyclerView
       android:id="@+id/snippet_recyclerview"
       android:layout_width="match_parent"

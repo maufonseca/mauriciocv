@@ -16,37 +16,24 @@ import java.util.ArrayList;
 
 public class SnippetAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
   private ArrayList<Snippet> snippetList;
-  private String title;
   private Context context;
 
 
-  public SnippetAdapter(Context context, String title, ArrayList<Snippet> snippets) {
+  public SnippetAdapter(Context context, ArrayList<Snippet> snippets) {
     snippetList = snippets;
-    this.title = title;
     this.context = context;
   }
 
   @Override
   public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-    if(viewType == 0) {
-      View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.cell_title, parent, false);
-      TitleViewHolder tvh = new TitleViewHolder(v);
-      return tvh;
-    } else {
-      View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.cell_snippet, parent, false);
-      ViewHolder vh = new ViewHolder(v);
-      return vh;
-    }
+    View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.cell_snippet, parent, false);
+    ViewHolder vh = new ViewHolder(v);
+    return vh;
   }
 
   @Override
   public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
-    if(position == 0) bindHeaderViewHolder((TitleViewHolder) holder);
-    else bindCellViewHolder((ViewHolder) holder, position-1);
-
-  }
-  public void bindHeaderViewHolder(TitleViewHolder holder) {
-    holder.titleTextView.setText(this.title);
+    bindCellViewHolder((ViewHolder) holder, position);
   }
 
   public void bindCellViewHolder(ViewHolder holder, int index) {
@@ -77,20 +64,14 @@ public class SnippetAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
 
   @Override
   public int getItemCount() {
-    return snippetList.size()+1; //+1 for header
+    return snippetList.size();
   }
 
-  @Override
-  public int getItemViewType(int position) {
-    //0 is header
-    if(position==0) return 0;
-    else return 1;
-  }
 
   public static class ViewHolder extends RecyclerView.ViewHolder {
-    public TextView titleTextView, subtitleTextView, shortDescriptionTextView;
-    public LinearLayout cellLayout;
-    public ViewHolder(View v) {
+    TextView titleTextView, subtitleTextView, shortDescriptionTextView;
+    LinearLayout cellLayout;
+    ViewHolder(View v) {
       super(v);
       cellLayout = v.findViewById(R.id.cell_layout);
       titleTextView = v.findViewById(R.id.title_textview);
@@ -98,14 +79,4 @@ public class SnippetAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
       shortDescriptionTextView = v.findViewById(R.id.short_description_textview);
     }
   }
-
-  public static class TitleViewHolder extends RecyclerView.ViewHolder {
-    public TextView titleTextView;
-    public TitleViewHolder(View v) {
-      super(v);
-      titleTextView = v.findViewById(R.id.section_textview);
-
-    }
-  }
-
 }

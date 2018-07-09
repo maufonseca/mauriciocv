@@ -17,6 +17,6 @@ public class WorkActivity extends ListActivity {
     TextView titleView = findViewById(R.id.title_textview);
     titleView.setText(getString(R.string.work_history));
     RecyclerView appsRecyclerView = findViewById(R.id.content_recyclerview);
-    appsRecyclerView.setAdapter(new SnippetAdapter(this, "", WorkHistoryRequester.getWorkHistory()));
+    appsRecyclerView.setAdapter(new SnippetAdapter(this, WorkHistoryRequester.getWorkHistory()));
   }
 }

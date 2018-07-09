@@ -17,6 +17,6 @@ public class SchoolActivity extends ListActivity {
     TextView titleView = findViewById(R.id.title_textview);
     titleView.setText(getString(R.string.academic_formation));
     RecyclerView appsRecyclerView = findViewById(R.id.content_recyclerview);
-    appsRecyclerView.setAdapter(new SnippetAdapter(this, "", Snippet.getSchool()));
+    appsRecyclerView.setAdapter(new SnippetAdapter(this, Snippet.getSchool()));
   }
 }

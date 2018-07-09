@@ -13,6 +13,7 @@ import android.widget.TextView;
 
 import com.maufonseca.mauriciocv.infrastructure.WorkHistoryRequester;
 import com.maufonseca.mauriciocv.presentation.complement.ComplementActivity;
+import com.maufonseca.mauriciocv.presentation.contact.ContactActivity;
 import com.maufonseca.mauriciocv.presentation.development.DevActivity;
 import com.maufonseca.mauriciocv.R;
 import com.maufonseca.mauriciocv.model.Snippet;
@@ -26,33 +27,19 @@ import com.maufonseca.mauriciocv.presentation.work.WorkActivity;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
-
-  LinearLayout contactLayout;
   RecyclerView snippetRecyclerView;
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
     snippetRecyclerView = findViewById(R.id.snippet_recyclerview);
-    contactLayout = findViewById(R.id.include_contact);
-
-    snippetRecyclerView.setAdapter(new SnippetAdapter(this, "", new ArrayList<Snippet>()));
+    snippetRecyclerView.setAdapter(new SnippetAdapter(this, new ArrayList<Snippet>()));
     snippetRecyclerView.setLayoutManager(new LinearLayoutManager(this));
-
-    TextView email = findViewById(R.id.email_textview);
-    email.setText(Html.fromHtml("<a href=\"mailto:maubfon@gmail.com\">E-mail: maubfon@gmail.com</a>"));
-    email.setMovementMethod(LinkMovementMethod.getInstance());
-    TextView github = findViewById(R.id.github_textview);
-    github.setText(Html.fromHtml("<a href=\"http://github.com/maufonseca\">GitHub: /maufonseca</a>"));
-    github.setMovementMethod(LinkMovementMethod.getInstance());
-
     synthesisClicked(null);
   }
 
   public void synthesisClicked(View v) {
-    snippetRecyclerView.setAdapter(new SnippetAdapter(this, getString(R.string.qualification_synthesis), Snippet.getSynthesis()));
-    snippetRecyclerView.setVisibility(View.VISIBLE);
-    contactLayout.setVisibility(View.GONE);
+    snippetRecyclerView.setAdapter(new SnippetAdapter(this, Snippet.getSynthesis()));
   }
   public void workClicked(View v) {
     Intent workIntent = new Intent(this, WorkActivity.class);
@@ -72,8 +59,8 @@ public class MainActivity extends AppCompatActivity {
     startActivity(complementIntent);
   }
   public void contactClicked(View v) {
-    snippetRecyclerView.setVisibility(View.GONE);
-    contactLayout.setVisibility(View.VISIBLE);
+    Intent contactIntent = new Intent(this, ContactActivity.class);
+    startActivity(contactIntent);
   }
   public void devClicked(View v) {
     Intent devIntent = new Intent(this, DevActivity.class);

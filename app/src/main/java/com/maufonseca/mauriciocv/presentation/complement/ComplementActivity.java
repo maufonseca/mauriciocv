@@ -19,6 +19,6 @@ public class ComplementActivity extends ListActivity {
     TextView titleView = findViewById(R.id.title_textview);
     titleView.setText(getString(R.string.complementary_activities));
     RecyclerView appsRecyclerView = findViewById(R.id.content_recyclerview);
-    appsRecyclerView.setAdapter(new SnippetAdapter(this, "", Snippet.getComplement()));
+    appsRecyclerView.setAdapter(new SnippetAdapter(this, Snippet.getComplement()));
   }
 }
