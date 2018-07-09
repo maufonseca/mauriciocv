@@ -12,11 +12,16 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.maufonseca.mauriciocv.infrastructure.WorkHistoryRequester;
+import com.maufonseca.mauriciocv.presentation.complement.ComplementActivity;
 import com.maufonseca.mauriciocv.presentation.development.DevActivity;
 import com.maufonseca.mauriciocv.R;
 import com.maufonseca.mauriciocv.model.Snippet;
+import com.maufonseca.mauriciocv.presentation.list.ListActivity;
+import com.maufonseca.mauriciocv.presentation.list.SnippetAdapter;
 import com.maufonseca.mauriciocv.presentation.myapps.AppsActivity;
+import com.maufonseca.mauriciocv.presentation.school.SchoolActivity;
 import com.maufonseca.mauriciocv.presentation.snippetdetail.SnippetDetailActivity;
+import com.maufonseca.mauriciocv.presentation.work.WorkActivity;
 
 import java.util.ArrayList;
 
@@ -50,23 +55,21 @@ public class MainActivity extends AppCompatActivity {
     contactLayout.setVisibility(View.GONE);
   }
   public void workClicked(View v) {
-    snippetRecyclerView.setAdapter(new SnippetAdapter(this, getString(R.string.work_history), WorkHistoryRequester.getWorkHistory()));
-    snippetRecyclerView.setVisibility(View.VISIBLE);
-    contactLayout.setVisibility(View.GONE);
+    Intent workIntent = new Intent(this, WorkActivity.class);
+    startActivity(workIntent);
   }
   public void appsClicked(View v) {
-    Intent devIntent = new Intent(this, AppsActivity.class);
-    startActivity(devIntent);
+    Intent appsIntent = new Intent(this, AppsActivity.class);
+    startActivity(appsIntent);
   }
   public void schoolClicked(View v) {
-    snippetRecyclerView.setAdapter(new SnippetAdapter(this, getString(R.string.academic_formation), Snippet.getSchool()));
-    snippetRecyclerView.setVisibility(View.VISIBLE);
-    contactLayout.setVisibility(View.GONE);
+    Intent schoolIntent = new Intent(this, SchoolActivity.class);
+    startActivity(schoolIntent);
   }
+
   public void complementClicked(View v) {
-    snippetRecyclerView.setAdapter(new SnippetAdapter(this, getString(R.string.complementary_activities), Snippet.getComplement()));
-    snippetRecyclerView.setVisibility(View.VISIBLE);
-    contactLayout.setVisibility(View.GONE);
+    Intent complementIntent = new Intent(this, ComplementActivity.class);
+    startActivity(complementIntent);
   }
   public void contactClicked(View v) {
     snippetRecyclerView.setVisibility(View.GONE);

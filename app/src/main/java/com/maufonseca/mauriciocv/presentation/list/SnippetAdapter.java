@@ -1,4 +1,4 @@
-package com.maufonseca.mauriciocv.presentation.main;
+package com.maufonseca.mauriciocv.presentation.list;
 
 import android.content.Context;
 import android.support.v4.content.ContextCompat;

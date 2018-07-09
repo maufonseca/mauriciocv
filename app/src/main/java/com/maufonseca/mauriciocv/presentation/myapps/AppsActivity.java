@@ -1,30 +1,21 @@
 package com.maufonseca.mauriciocv.presentation.myapps;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.view.View;
 import android.widget.TextView;
 
 import com.maufonseca.mauriciocv.R;
 import com.maufonseca.mauriciocv.model.AppSnippet;
+import com.maufonseca.mauriciocv.presentation.list.ListActivity;
 
-public class AppsActivity extends AppCompatActivity {
+public class AppsActivity extends ListActivity {
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    setContentView(R.layout.activity_apps);
     TextView titleView = findViewById(R.id.title_textview);
     titleView.setText(getString(R.string.apps));
-    RecyclerView appsRecyclerView = findViewById(R.id.apps_recyclerview);
-    appsRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+    RecyclerView appsRecyclerView = findViewById(R.id.content_recyclerview);
     appsRecyclerView.setAdapter(new AppSnippetAdapter(this, AppSnippet.getApps()));
-    appsRecyclerView.setNestedScrollingEnabled(false);
-  }
-
-  public void backTouched(View v) {
-    finish();
   }
 }

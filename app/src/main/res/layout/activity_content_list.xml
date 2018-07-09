@@ -3,8 +3,7 @@
   xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:tools="http://schemas.android.com/tools"
   android:layout_width="match_parent"
-  android:layout_height="wrap_content"
-  tools:context=".presentation.myapps.AppsActivity">
+  android:layout_height="wrap_content">
   <LinearLayout
     android:focusable="true"
     android:focusableInTouchMode="true"
@@ -15,7 +14,7 @@
     <include layout="@layout/bar_title"/>
     <android.support.v7.widget.RecyclerView
       android:focusable="false"
-      android:id="@+id/apps_recyclerview"
+      android:id="@+id/content_recyclerview"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"/>
 
