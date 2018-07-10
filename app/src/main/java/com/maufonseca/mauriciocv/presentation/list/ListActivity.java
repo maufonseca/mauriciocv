@@ -14,6 +14,8 @@ import com.maufonseca.mauriciocv.model.Snippet;
 import com.maufonseca.mauriciocv.presentation.myapps.AppSnippetAdapter;
 import com.maufonseca.mauriciocv.presentation.snippetdetail.SnippetDetailActivity;
 
+import java.util.ArrayList;
+
 public class ListActivity extends AppCompatActivity {
 
   @Override
@@ -24,7 +26,7 @@ public class ListActivity extends AppCompatActivity {
     titleView.setText(getString(R.string.apps));
     RecyclerView appsRecyclerView = findViewById(R.id.content_recyclerview);
     appsRecyclerView.setLayoutManager(new LinearLayoutManager(this));
-    appsRecyclerView.setAdapter(new AppSnippetAdapter(this, AppSnippet.getApps()));
+    appsRecyclerView.setAdapter(new AppSnippetAdapter(this, new ArrayList<AppSnippet>()));
     appsRecyclerView.setNestedScrollingEnabled(false);
   }
 

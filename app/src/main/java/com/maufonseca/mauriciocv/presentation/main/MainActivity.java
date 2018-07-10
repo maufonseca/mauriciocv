@@ -7,6 +7,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
+import com.maufonseca.mauriciocv.infrastructure.SynthesisRequester;
 import com.maufonseca.mauriciocv.presentation.complement.ComplementActivity;
 import com.maufonseca.mauriciocv.presentation.contact.ContactActivity;
 import com.maufonseca.mauriciocv.presentation.development.DevActivity;
@@ -62,7 +63,7 @@ public class MainActivity extends AppCompatActivity implements SearchDisplay {
   }
 
   public void synthesisClicked(View v) {
-    snippetRecyclerView.setAdapter(new SnippetAdapter(this, Snippet.getSynthesis()));
+    snippetRecyclerView.setAdapter(new SnippetAdapter(this, SynthesisRequester.getSynthesis()));
   }
   public void workClicked(View v) {
     Intent workIntent = new Intent(this, WorkActivity.class);
@@ -113,7 +114,7 @@ public class MainActivity extends AppCompatActivity implements SearchDisplay {
   }
 
   void cleanSearch() {
-    snippetRecyclerView.setAdapter(new SnippetAdapter(this,Snippet.getSynthesis()));
+    snippetRecyclerView.setAdapter(new SnippetAdapter(this, SynthesisRequester.getSynthesis()));
   }
 
   public void updateResults(ArrayList<Snippet> snippets) {

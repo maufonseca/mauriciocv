@@ -4,16 +4,7 @@ import com.maufonseca.mauriciocv.model.Snippet;
 
 import java.util.ArrayList;
 
-public class WorkHistoryRequester {
-
-  public WorkHistoryRequester() {
-
-  }
-
-  public void requestWorkHistory() {
-    ArrayList<Snippet> workArray = new ArrayList<>();
-    workArray = getWorkHistory();
-  }
+public class WorkRequester {
 
   //Let it be here while not getting it from api
   public static ArrayList<Snippet> getWorkHistory() {
