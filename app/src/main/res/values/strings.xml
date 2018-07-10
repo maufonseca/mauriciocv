@@ -1,7 +1,7 @@
 <resources>
   <string name="app_name">Mauricio CV</string>
   <string name="worker_name">Maurício Fonseca</string>
-  <string name="mobile_developer">Engenheiro de Software</string>
+  <string name="software_engineer">Engenheiro de Software</string>
   <!--Synthesis-->
   <string name="qualification_synthesis">Síntese de Qualificações</string>
   <!--Work-->
@@ -22,8 +22,8 @@ Pouco tempo de desenvolvimento foi empregado antes da publicação na Play Store
   <string name="email_call">Sugestões e críticas ou pedidos podem ser enviados por e-mail: </string>
   <string name="rating_call">Avalie este aplicativo na Play Store e deixe seu comentário pelo link:</string>
   <string name="thanks">Muito obrigado por ter chegado até aqui!</string>
-  <!--Print-->
-  <string name="print">Baixar CV em PDF</string>
+  <!--Main-->
+  <string name="search">Buscar competência</string>
   <!--Share-->
   <string name="share">Compartilhe este App</string>
   <!--Apps-->

@@ -5,19 +5,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.text.Html;
-import android.text.method.LinkMovementMethod;
+import android.support.v7.widget.SearchView;
 import android.view.View;
-import android.widget.LinearLayout;
-import android.widget.TextView;
 
-import com.maufonseca.mauriciocv.infrastructure.WorkHistoryRequester;
 import com.maufonseca.mauriciocv.presentation.complement.ComplementActivity;
 import com.maufonseca.mauriciocv.presentation.contact.ContactActivity;
 import com.maufonseca.mauriciocv.presentation.development.DevActivity;
 import com.maufonseca.mauriciocv.R;
 import com.maufonseca.mauriciocv.model.Snippet;
-import com.maufonseca.mauriciocv.presentation.list.ListActivity;
 import com.maufonseca.mauriciocv.presentation.list.SnippetAdapter;
 import com.maufonseca.mauriciocv.presentation.myapps.AppsActivity;
 import com.maufonseca.mauriciocv.presentation.school.SchoolActivity;
@@ -27,7 +22,10 @@ import com.maufonseca.mauriciocv.presentation.work.WorkActivity;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
+  SearchInteractor interactor;
   RecyclerView snippetRecyclerView;
+  SearchView searchView;
+
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
@@ -35,7 +33,34 @@ public class MainActivity extends AppCompatActivity {
     snippetRecyclerView = findViewById(R.id.snippet_recyclerview);
     snippetRecyclerView.setAdapter(new SnippetAdapter(this, new ArrayList<Snippet>()));
     snippetRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+    snippetRecyclerView.setNestedScrollingEnabled(false);
+    routeScene();
+    configureSearchWidget();
     synthesisClicked(null);
+  }
+
+  void routeScene() {
+    SearchPresenter presenter = new SearchPresenter(null);
+    presenter.activity = this;
+    interactor = new SearchInteractor(presenter);
+  }
+
+  public void configureSearchWidget() {
+    searchView = findViewById(R.id.search_view);
+
+    searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+      @Override
+      public boolean onQueryTextSubmit(String query) {
+        return false;
+      }
+
+      @Override
+      public boolean onQueryTextChange(String newText) {
+        if(newText.equals("")) cleanSearch();
+        else interactor.search(newText);
+        return true;
+      }
+    });
   }
 
   public void synthesisClicked(View v) {
@@ -87,6 +112,14 @@ public class MainActivity extends AppCompatActivity {
     intent.putExtra( "snippet", touchedSnippet);
     startActivity(intent);
 
+  }
+
+  void cleanSearch() {
+    snippetRecyclerView.setAdapter(new SnippetAdapter(this,Snippet.getSynthesis()));
+  }
+
+  void updateResults(ArrayList<Snippet> snippets) {
+    snippetRecyclerView.setAdapter(new SnippetAdapter(this,snippets));
   }
 
 }

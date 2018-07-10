@@ -19,7 +19,7 @@ public class ListActivity extends AppCompatActivity {
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    setContentView(R.layout.activity_content_list);
+    setContentView(R.layout.activity_list);
     TextView titleView = findViewById(R.id.title_textview);
     titleView.setText(getString(R.string.apps));
     RecyclerView appsRecyclerView = findViewById(R.id.content_recyclerview);

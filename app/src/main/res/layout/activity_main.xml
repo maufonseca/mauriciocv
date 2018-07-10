@@ -1,99 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-  xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:tools="http://schemas.android.com/tools"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
   tools:context=".presentation.main.MainActivity">
 
   <FrameLayout
     android:layout_marginStart="80dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
-    <android.support.v7.widget.RecyclerView
-      android:id="@+id/snippet_recyclerview"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"/>
-  </FrameLayout>
-
-  <FrameLayout
-    android:layout_width="80dp"
-    android:layout_height="match_parent">
-    <ScrollView
+    <android.support.v4.widget.NestedScrollView
       android:layout_width="match_parent"
       android:layout_height="wrap_content">
       <LinearLayout
-        android:background="@color/md_grey_400"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <ImageView
-          android:padding="16dp"
-          android:background="@drawable/ripple_bar"
-          android:src="@drawable/twotone_mauricio_black_48"
+        <LinearLayout
+          xmlns:android="http://schemas.android.com/apk/res/android"
+          android:orientation="vertical"
+          android:background="@color/md_amber_900"
           android:layout_width="match_parent"
-          android:layout_height="80dp"
-          android:contentDescription="@string/qualification_synthesis"
-          android:onClick="synthesisClicked"/>
-        <ImageView
-          android:padding="16dp"
-          android:background="@drawable/ripple_bar"
-          android:src="@drawable/twotone_business_center_black_48"
+          android:layout_height="wrap_content">
+          <TextView
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="8dp"
+            android:text="@string/worker_name"
+            android:textColor="@color/md_white_1000"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+          <TextView
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="16dp"
+            android:text="@string/software_engineer"
+            android:textColor="@color/md_white_1000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+          <android.support.v7.widget.SearchView
+            android:id="@+id/search_view"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            app:iconifiedByDefault="false"
+            android:background="@color/md_white_1000"
+            app:queryHint="Buscar competência"
+            android:layout_width="match_parent"
+            android:layout_height="48dp" />
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView
+          android:id="@+id/snippet_recyclerview"
           android:layout_width="match_parent"
-          android:layout_height="80dp"
-          android:contentDescription="@string/work_history"
-          android:onClick="workClicked"/>
-        <ImageView
-          android:padding="16dp"
-          android:background="@drawable/ripple_bar"
-          android:src="@drawable/twotone_smartphone_black_48"
-          android:layout_width="match_parent"
-          android:layout_height="80dp"
-          android:contentDescription="@string/apps"
-          android:onClick="appsClicked"/>
-        <ImageView
-          android:padding="16dp"
-          android:background="@drawable/ripple_bar"
-          android:src="@drawable/twotone_school_black_48"
-          android:layout_width="match_parent"
-          android:layout_height="80dp"
-          android:contentDescription="@string/academic_formation"
-          android:onClick="schoolClicked"/>
-        <ImageView
-          android:padding="16dp"
-          android:background="@drawable/ripple_bar"
-          android:src="@drawable/twotone_dashboard_black_48"
-          android:layout_width="match_parent"
-          android:layout_height="80dp"
-          android:contentDescription="@string/complementary_activities"
-          android:onClick="complementClicked"/>
-        <ImageView
-          android:padding="16dp"
-          android:background="@drawable/ripple_bar"
-          android:src="@drawable/twotone_email_black_48"
-          android:layout_width="match_parent"
-          android:layout_height="80dp"
-          android:contentDescription="@string/contact"
-          android:onClick="contactClicked"/>
-        <ImageView
-          android:padding="16dp"
-          android:background="@drawable/ripple_bar"
-          android:src="@drawable/twotone_share_black_48"
-          android:layout_width="match_parent"
-          android:layout_height="80dp"
-          android:contentDescription="@string/share"
-          android:onClick="shareClicked"/>
-        <ImageView
-          android:padding="16dp"
-          android:background="@drawable/ripple_bar"
-          android:src="@drawable/twotone_code_black_48"
-          android:layout_width="match_parent"
-          android:layout_height="80dp"
-          android:contentDescription="@string/about"
-          android:onClick="devClicked"/>
-
+          android:layout_height="wrap_content"/>
       </LinearLayout>
-    </ScrollView>
+
+    </android.support.v4.widget.NestedScrollView>
+
   </FrameLayout>
+
+  <include layout="@layout/menu_left"/>
 </RelativeLayout>

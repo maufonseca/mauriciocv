@@ -54,11 +54,17 @@ public class Snippet implements Parcelable {
     this.longDescription = longDescription;
   }
 
+  public boolean matchesQuery(String query) {
+    return (title.toLowerCase().contains(query.toLowerCase())
+        || subtitle.toLowerCase().contains(query.toLowerCase())
+        || shortDescription.toLowerCase().contains(query.toLowerCase())
+        || longDescription.toLowerCase().contains(query.toLowerCase()));
+  }
   public static ArrayList<Snippet> getSynthesis() {
     ArrayList<Snippet> synthesis = new ArrayList<>();
 
-    Snippet nativeDev = new Snippet("Mauricio Fonseca",
-      "Engenheiro de Software",
+    Snippet nativeDev = new Snippet("",
+      "",
       "Experiência em desenvolvimento nativo para sistemas Android e iOS, domínio das IDEs Android Studio e Xcode e das linguagens de programação: Java, Objective-C e Swift",
       "• Prática diária com desenvolvimento nativo e migração de sistemas iOS legados de Objective-C para Swift\n\n"+
     "• Migração de código Java para Kotlin em aplicativos Android\n\n"+
