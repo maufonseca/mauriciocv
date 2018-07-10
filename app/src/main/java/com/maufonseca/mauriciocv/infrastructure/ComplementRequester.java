@@ -9,6 +9,18 @@ public class ComplementRequester {
   //Let it be here while not getting it from api
   public static ArrayList<Snippet> getComplement() {
     ArrayList<Snippet> complement = new ArrayList<>();
+    Snippet kotlin = new Snippet("Curso: Fundamentos de Programação Moderna com Kotlin/2018",
+        "(udemy.com/curso-kotlin-pt)",
+        "Aprendizado da linguagem Kotlin através de exemplos e exercícios com estruturas modernas de programação funcional",
+        "• Funções Top Level\n" + "• Funcões como parâmetro\n" + "• Lambdas\n" + "• Generics\n");
+    complement.add(kotlin);
+
+    Snippet web = new Snippet("Curso: Web Moderno com JavaScript/2018",
+        "(udemy.com/curso-web)",
+        "Aborda o desenvolvimento Web de ponta a ponta com  Javascript, Node, HTML, CSS, Gulp, Webpack, jQuery, Bootstrap, React, VueJS, ExpressJS, MySQL e MongoDB",
+        "");
+    complement.add(web);
+
     Snippet google = new Snippet("Google Cloud OnBoard SP/2018",
         "(cloud.google.com/training)",
         "Treinamento sobre o uso das ferramentas do Google Cloud ministrado por instrutores do Google",
