@@ -2,11 +2,11 @@ package com.maufonseca.mauriciocv.presentation.main;
 
 import com.maufonseca.mauriciocv.infrastructure.SearchEngine;
 
-public class SearchInteractor {
+public class SearchInteractor implements SearchInteraction{
 
-  SearchPresenter presenter;
+  SearchPresentation presenter;
 
-  public SearchInteractor(SearchPresenter presenter) {
+  public SearchInteractor(SearchPresentation presenter) {
     this.presenter = presenter;
   }
 

@@ -4,11 +4,11 @@ import com.maufonseca.mauriciocv.model.Snippet;
 
 import java.util.ArrayList;
 
-public class SearchPresenter {
+public class SearchPresenter implements SearchPresentation {
 
-  MainActivity activity;
+  SearchDisplay activity;
 
-  public SearchPresenter(MainActivity activity) {
+  public SearchPresenter(SearchDisplay activity) {
     this.activity = activity;
   }
 

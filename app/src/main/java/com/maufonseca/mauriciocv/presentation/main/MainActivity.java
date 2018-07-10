@@ -5,7 +5,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.SearchView;
 import android.view.View;
 
 import com.maufonseca.mauriciocv.presentation.complement.ComplementActivity;
@@ -21,10 +20,10 @@ import com.maufonseca.mauriciocv.presentation.work.WorkActivity;
 
 import java.util.ArrayList;
 
-public class MainActivity extends AppCompatActivity {
-  SearchInteractor interactor;
+public class MainActivity extends AppCompatActivity implements SearchDisplay {
+  SearchInteraction interactor;
   RecyclerView snippetRecyclerView;
-  SearchView searchView;
+  android.support.v7.widget.SearchView searchView;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -40,15 +39,14 @@ public class MainActivity extends AppCompatActivity {
   }
 
   void routeScene() {
-    SearchPresenter presenter = new SearchPresenter(null);
-    presenter.activity = this;
+    SearchPresenter presenter = new SearchPresenter(this);
     interactor = new SearchInteractor(presenter);
   }
 
   public void configureSearchWidget() {
     searchView = findViewById(R.id.search_view);
 
-    searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+    searchView.setOnQueryTextListener(new android.support.v7.widget.SearchView.OnQueryTextListener() {
       @Override
       public boolean onQueryTextSubmit(String query) {
         return false;
@@ -118,7 +116,7 @@ public class MainActivity extends AppCompatActivity {
     snippetRecyclerView.setAdapter(new SnippetAdapter(this,Snippet.getSynthesis()));
   }
 
-  void updateResults(ArrayList<Snippet> snippets) {
+  public void updateResults(ArrayList<Snippet> snippets) {
     snippetRecyclerView.setAdapter(new SnippetAdapter(this,snippets));
   }
 
