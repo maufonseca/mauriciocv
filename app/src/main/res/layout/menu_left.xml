@@ -22,6 +22,14 @@
       <ImageView
         android:padding="16dp"
         android:background="@drawable/ripple_bar"
+        android:src="@drawable/twotone_school_black_48"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:contentDescription="@string/academic_formation"
+        android:onClick="schoolClicked"/>
+      <ImageView
+        android:padding="16dp"
+        android:background="@drawable/ripple_bar"
         android:src="@drawable/twotone_business_center_black_48"
         android:layout_width="match_parent"
         android:layout_height="80dp"
@@ -35,14 +43,6 @@
         android:layout_height="80dp"
         android:contentDescription="@string/apps"
         android:onClick="appsClicked"/>
-      <ImageView
-        android:padding="16dp"
-        android:background="@drawable/ripple_bar"
-        android:src="@drawable/twotone_school_black_48"
-        android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:contentDescription="@string/academic_formation"
-        android:onClick="schoolClicked"/>
       <ImageView
         android:padding="16dp"
         android:background="@drawable/ripple_bar"
