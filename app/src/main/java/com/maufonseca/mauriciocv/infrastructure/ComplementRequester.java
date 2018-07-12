@@ -12,7 +12,8 @@ public class ComplementRequester {
     Snippet kotlin = new Snippet("Curso: Fundamentos de Programação Moderna com Kotlin/2018",
         "(udemy.com/curso-kotlin-pt)",
         "Aprendizado da linguagem Kotlin através de exemplos e exercícios com estruturas modernas de programação funcional",
-        "• Funções Top Level\n" + "• Funcões como parâmetro\n" + "• Lambdas\n" + "• Generics\n");
+        "• Funções top level\n" + "• Funcões como parâmetro\n" + "• Lambdas\n" + "• Generics\n" +
+            "• Funções Inline\n");
     complement.add(kotlin);
 
     Snippet web = new Snippet("Curso: Web Moderno com JavaScript/2018",
@@ -24,23 +25,24 @@ public class ComplementRequester {
     Snippet google = new Snippet("Google Cloud OnBoard SP/2018",
         "(cloud.google.com/training)",
         "Treinamento sobre o uso das ferramentas do Google Cloud ministrado por instrutores do Google",
-        "");
+        "Treinamento presencial com duração de um dia e execução de laboratórios práticos na Google Cloud Platform abrangendo: "+
+            "computação em nuvem, armazenamento em nuvem, Kubernetes, big data, machine learning, Speech API e visão computacional");
     complement.add(google);
 
     Snippet devConf = new Snippet("DevConf 2018",
         "(devconf.opensanca.com.br)",
         "Evento com palestras sobre desenvolvimento de software ocorrido em São Carlos/SP",
-        "");
+        "Entre os assuntos abordados pelos palestrantes estavam: computação distribuída, Clean-Code, sistemas resilientes, tolerância a falhas, criação de chatbots");
     complement.add(devConf);
 
     Snippet army = new Snippet("Serviço Militar Obrigatório - 2006",
         "Exercito Brasileiro - Botucatu/SP",
+        "Atividades de liderança em campanhas sociais",
         "• Organização de campanhas sociais municipais (agasalho, remédios, alimentos)\n" +
             "• Aplicação de instruções aos soldados e população sobre assuntos variados\n" +
             "• Comando de Pelotão e Porta-Bandeira do Brasil\n" +
             "• Certificação militar de Honra ao Mérito\n" +
-            "• Promoção a Cabo do Exército",
-        "");
+            "• Promoção a Cabo do Exército");
     complement.add(army);
     return complement;
   }
