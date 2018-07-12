@@ -3,65 +3,13 @@
   xmlns:tools="http://schemas.android.com/tools"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
-  xmlns:app="http://schemas.android.com/apk/res-auto"
   tools:context=".presentation.main.MainActivity">
 
-  <FrameLayout
+  <include
     android:layout_marginStart="80dp"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <android.support.v4.widget.NestedScrollView
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content">
-      <LinearLayout
-        android:focusable="true"
-        android:focusableInTouchMode="true"
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <LinearLayout
-          xmlns:android="http://schemas.android.com/apk/res/android"
-          android:orientation="vertical"
-          android:background="@color/md_amber_900"
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content">
-          <TextView
-            android:paddingStart="16dp"
-            android:paddingEnd="16dp"
-            android:paddingTop="8dp"
-            android:text="@string/worker_name"
-            android:textColor="@color/md_white_1000"
-            android:textSize="18sp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-          <TextView
-            android:paddingStart="16dp"
-            android:paddingEnd="16dp"
-            android:paddingBottom="16dp"
-            android:text="@string/software_engineer"
-            android:textColor="@color/md_white_1000"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-          <android.support.v7.widget.SearchView
-            android:id="@+id/search_view"
-            android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="16dp"
-            app:iconifiedByDefault="false"
-            android:background="@color/md_white_1000"
-            app:queryHint="Buscar competência"
-            android:layout_width="match_parent"
-            android:layout_height="48dp" />
-        </LinearLayout>
-        <android.support.v7.widget.RecyclerView
-          android:id="@+id/snippet_recyclerview"
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"/>
-      </LinearLayout>
+    android:layout_height="match_parent"
+    layout="@layout/main_scroll"    />
 
-    </android.support.v4.widget.NestedScrollView>
-
-  </FrameLayout>
-
-  <include layout="@layout/menu_left"/>
+  <include layout="@layout/main_menu"/>
 </RelativeLayout>

@@ -33,7 +33,6 @@ public class MainActivity extends AppCompatActivity implements SearchDisplay {
     snippetRecyclerView = findViewById(R.id.snippet_recyclerview);
     snippetRecyclerView.setAdapter(new SnippetAdapter(this, new ArrayList<Snippet>()));
     snippetRecyclerView.setLayoutManager(new LinearLayoutManager(this));
-    snippetRecyclerView.setNestedScrollingEnabled(false);
     routeScene();
     configureSearchWidget();
     synthesisClicked(null);
