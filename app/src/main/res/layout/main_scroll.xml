@@ -16,8 +16,8 @@
 
     <TextView
       app:layout_scrollFlags="scroll"
-      android:paddingStart="16dp"
-      android:paddingEnd="16dp"
+      android:paddingStart="8dp"
+      android:paddingEnd="8dp"
       android:paddingTop="8dp"
       android:text="@string/worker_name"
       android:textColor="@color/md_white_1000"
@@ -27,8 +27,8 @@
 
     <TextView
       app:layout_scrollFlags="scroll"
-      android:paddingStart="16dp"
-      android:paddingEnd="16dp"
+      android:paddingStart="8dp"
+      android:paddingEnd="8dp"
       android:paddingBottom="8dp"
       android:text="@string/software_engineer"
       android:textColor="@color/md_white_1000"
@@ -36,7 +36,6 @@
       android:layout_height="wrap_content"/>
 
     <android.support.v7.widget.SearchView
-      app:layout_scrollFlags="scroll|enterAlways"
       android:id="@+id/search_view"
       android:layout_marginTop="8dp"
       android:layout_marginStart="8dp"

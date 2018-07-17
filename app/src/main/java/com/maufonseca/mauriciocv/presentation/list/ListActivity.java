@@ -27,7 +27,6 @@ public class ListActivity extends AppCompatActivity {
     RecyclerView appsRecyclerView = findViewById(R.id.content_recyclerview);
     appsRecyclerView.setLayoutManager(new LinearLayoutManager(this));
     appsRecyclerView.setAdapter(new AppSnippetAdapter(this, new ArrayList<AppSnippet>()));
-    appsRecyclerView.setNestedScrollingEnabled(false);
   }
 
   public void snippetTouched(View v) {

@@ -11,7 +11,30 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-    <include layout="@layout/bar_title"/>
+
+    <ImageView
+      android:padding="8dp"
+      android:layout_marginTop="8dp"
+      android:layout_marginStart="8dp"
+      android:tint="@color/md_amber_900"
+      android:src="@drawable/twotone_arrow_back_black_48"
+      android:layout_width="48dp"
+      android:layout_height="48dp"
+      android:background="@drawable/ripple_white_to_grey"
+      android:onClick="backTouched"/>
+
+    <TextView
+      android:id="@+id/title_textview"
+      android:paddingStart="8dp"
+      android:paddingEnd="8dp"
+      android:paddingTop="24dp"
+      android:paddingBottom="24dp"
+      android:textColor="@color/md_black_1000"
+      android:textSize="18sp"
+      android:textStyle="bold"
+      android:textAlignment="center"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content" />
 
     <TextView
       android:id="@+id/body_textview"

@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<android.support.design.widget.AppBarLayout
+  xmlns:app="http://schemas.android.com/apk/res-auto"
   xmlns:android="http://schemas.android.com/apk/res/android"
-  android:orientation="vertical"
-  android:background="@color/md_amber_900"
+  app:elevation="0dp"
   android:layout_width="match_parent"
-  android:layout_height="wrap_content">
+  android:layout_height="wrap_content"
+  android:background="@color/md_amber_900">
+
   <ImageView
+    app:layout_scrollFlags="scroll|enterAlways"
     android:padding="8dp"
     android:layout_marginStart="8dp"
     android:tint="@color/md_white_1000"
@@ -14,14 +17,18 @@
     android:layout_height="48dp"
     android:background="@drawable/ripple_close_button"
     android:onClick="backTouched"/>
+
   <TextView
     android:id="@+id/title_textview"
-    android:paddingStart="16dp"
-    android:paddingEnd="16dp"
+    android:paddingStart="8dp"
+    android:paddingEnd="8dp"
     android:paddingTop="8dp"
     android:paddingBottom="16dp"
     android:textColor="@color/md_white_1000"
     android:textSize="18sp"
+    android:textStyle="bold"
+    android:textAlignment="center"
     android:layout_width="match_parent"
     android:layout_height="wrap_content" />
-</LinearLayout>
+
+</android.support.design.widget.AppBarLayout>
