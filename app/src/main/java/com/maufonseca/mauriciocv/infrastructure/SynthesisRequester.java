@@ -12,11 +12,12 @@ public class SynthesisRequester {
 
     Snippet nativeDev = new Snippet("",
         "",
-        "Experiência em desenvolvimento nativo para sistemas Android e iOS, domínio das IDEs Android Studio e Xcode e das linguagens de programação: Java, Objective-C e Swift",
+        "Experiência em desenvolvimento nativo para sistemas Android e iOS, domínio das IDEs Android Studio e Xcode e das linguagens de programação: Java, Kotlin, Objective-C e Swift",
         "• Prática diária com desenvolvimento nativo e migração de sistemas iOS legados de Objective-C para Swift\n\n"+
             "• Migração de código Java para Kotlin em aplicativos Android\n\n"+
             "• Experimentos com desenvolvimento híbrido utilizando o SDK Flutter, do Google, na linguagem Dart\n\n"+
-            "• Profundo conhecimento dos componentes do CocoaTouch e Android SDK");
+            "• Profundo conhecimento dos componentes do CocoaTouch e Android SDK\n\n"+
+            "• Conhecimento do paradigma de Programação Funcional e uso de lambdas");
     synthesis.add(nativeDev);
 
     Snippet arq = new Snippet("",

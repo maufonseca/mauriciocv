@@ -16,7 +16,7 @@
       android:padding="8dp"
       android:layout_marginTop="8dp"
       android:layout_marginStart="8dp"
-      android:tint="@color/md_amber_900"
+      android:tint="@color/md_black_1000"
       android:src="@drawable/twotone_arrow_back_black_48"
       android:layout_width="48dp"
       android:layout_height="48dp"
