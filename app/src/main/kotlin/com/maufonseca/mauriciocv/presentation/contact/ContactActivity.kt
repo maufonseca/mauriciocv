@@ -14,7 +14,8 @@ class ContactActivity : AppCompatActivity() {
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
     setContentView(R.layout.activity_contact)
-
+    val titleView = findViewById<TextView>(R.id.title_textview)
+    titleView.text = getString(R.string.contact)
     val email = findViewById<TextView>(R.id.email_textview)
     email.text = Html.fromHtml("<a href=\"mailto:maubfon@gmail.com\">E-mail: maubfon@gmail.com</a>")
     email.movementMethod = LinkMovementMethod.getInstance()
