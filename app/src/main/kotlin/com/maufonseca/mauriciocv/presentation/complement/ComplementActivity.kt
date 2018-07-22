@@ -14,9 +14,8 @@ class ComplementActivity : ListActivity() {
 
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
-    val titleView = findViewById<TextView>(R.id.title_textview)
-    titleView.text = getString(R.string.complementary_activities)
+    setListTitle(getString(R.string.complementary_activities))
     val appsRecyclerView = findViewById<RecyclerView>(R.id.content_recyclerview)
-    appsRecyclerView.adapter = SnippetAdapter(this, ComplementRequester.complement)
+    appsRecyclerView.adapter = SnippetAdapter(this, ComplementRequester.getComplement())
   }
 }

@@ -32,21 +32,21 @@ class SnippetAdapter(private val context: Context, private val snippetList: Arra
       holder.cellLayout.background = ContextCompat.getDrawable(context, R.drawable.ripple_grey_to_grey)
     else
       holder.cellLayout.background = ContextCompat.getDrawable(context, R.drawable.ripple_white_to_grey)
-    if (snippetList[index].title!!.isEmpty()) {
+    if (snippetList[index].title.isEmpty()) {
       holder.titleTextView.visibility = View.GONE
     } else {
       holder.titleTextView.text = snippetList[index].title
       holder.titleTextView.visibility = View.VISIBLE
     }
 
-    if (snippetList[index].subtitle!!.isEmpty()) {
+    if (snippetList[index].subtitle.isEmpty()) {
       holder.subtitleTextView.visibility = View.GONE
     } else {
       holder.subtitleTextView.text = snippetList[index].subtitle
       holder.subtitleTextView.visibility = View.VISIBLE
     }
 
-    if (snippetList[index].shortDescription!!.isEmpty()) {
+    if (snippetList[index].shortDescription.isEmpty()) {
       holder.shortDescriptionTextView.visibility = View.GONE
     } else {
       holder.shortDescriptionTextView.text = snippetList[index].shortDescription

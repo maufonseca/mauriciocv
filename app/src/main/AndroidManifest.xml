@@ -20,7 +20,7 @@
     <activity android:name=".presentation.list.ListActivity" />
     <activity android:name=".presentation.complement.ComplementActivity" />
     <activity android:name=".presentation.school.SchoolActivity" />
-    <activity android:name=".presentation.myapps.AppsActivity" />
+    <activity android:name=".presentation.portfolio.PortfolioActivity" />
     <activity android:name=".presentation.contact.ContactActivity" />
     <activity android:name=".presentation.snippetdetail.SnippetDetailActivity"/>
   </application>

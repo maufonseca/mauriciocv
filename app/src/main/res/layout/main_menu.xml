@@ -42,7 +42,7 @@
         android:src="@drawable/twotone_smartphone_black_48"
         android:layout_width="match_parent"
         android:layout_height="80dp"
-        android:contentDescription="@string/apps"
+        android:contentDescription="@string/portfolio"
         android:onClick="appsClicked"/>
       <ImageView
         android:padding="16dp"

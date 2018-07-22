@@ -9,9 +9,8 @@ import android.view.View
 import android.widget.TextView
 
 import com.maufonseca.mauriciocv.R
-import com.maufonseca.mauriciocv.model.AppSnippet
 import com.maufonseca.mauriciocv.model.Snippet
-import com.maufonseca.mauriciocv.presentation.myapps.AppSnippetAdapter
+import com.maufonseca.mauriciocv.presentation.portfolio.AppSnippetAdapter
 import com.maufonseca.mauriciocv.presentation.snippetdetail.SnippetDetailActivity
 
 import java.util.ArrayList
@@ -21,12 +20,12 @@ open class ListActivity : AppCompatActivity() {
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
     setContentView(R.layout.activity_list)
-    val titleView = findViewById<TextView>(R.id.title_textview)
-    titleView.text = getString(R.string.apps)
     val appsRecyclerView = findViewById<RecyclerView>(R.id.content_recyclerview)
-    appsRecyclerView?.layoutManager = LinearLayoutManager(this)
+    appsRecyclerView.layoutManager = LinearLayoutManager(this)
     appsRecyclerView.adapter = AppSnippetAdapter(this, ArrayList())
   }
+
+  fun setListTitle(title: String) { findViewById<TextView>(R.id.title_textview).text = title }
 
   fun snippetTouched(v: View) {
     var touchedSnippet: Snippet
@@ -42,6 +41,7 @@ open class ListActivity : AppCompatActivity() {
 
   }
 
+  @Suppress("UNUSED_PARAMETER")
   fun backTouched(v: View) {
     finish()
   }

@@ -14,9 +14,8 @@ class SchoolActivity : ListActivity() {
 
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
-    val titleView = findViewById<TextView>(R.id.title_textview)
-    titleView.text = getString(R.string.academic_formation)
+    setListTitle(getString(R.string.academic_formation))
     val appsRecyclerView = findViewById<RecyclerView>(R.id.content_recyclerview)
-    appsRecyclerView.adapter = SnippetAdapter(this, SchoolRequester.school)
+    appsRecyclerView.adapter = SnippetAdapter(this, SchoolRequester.getSchool())
   }
 }

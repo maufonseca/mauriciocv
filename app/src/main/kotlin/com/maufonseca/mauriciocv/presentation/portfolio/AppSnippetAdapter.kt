@@ -1,4 +1,4 @@
-package com.maufonseca.mauriciocv.presentation.myapps
+package com.maufonseca.mauriciocv.presentation.portfolio
 
 import android.content.Context
 import android.os.Build
@@ -15,8 +15,6 @@ import android.widget.TextView
 
 import com.maufonseca.mauriciocv.R
 import com.maufonseca.mauriciocv.model.AppSnippet
-import com.maufonseca.mauriciocv.model.Snippet
-import com.maufonseca.mauriciocv.presentation.myapps.AppSnippetAdapter.ViewHolder
 
 import java.util.ArrayList
 

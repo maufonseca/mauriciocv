@@ -5,9 +5,10 @@ import java.util.ArrayList
 
 object SearchEngine {
 
-  fun search(query: String): ArrayList<Snippet> = ArrayList(SynthesisRequester.synthesis.filter { it.matchesQuery(query) } +
-        SchoolRequester.school.filter { it.matchesQuery(query) } +
-        ComplementRequester.complement.filter { it.matchesQuery(query) } +
-        WorkRequester.workHistory.filter { it.matchesQuery(query) } +
-        AppsRequester.apps.filter { it.matchesQuery(query) })
+  fun search(query: String):
+      ArrayList<Snippet> = ArrayList(SynthesisRequester.getSynthesis().filter { it.matchesQuery(query) } +
+        SchoolRequester.getSchool().filter { it.matchesQuery(query) } +
+        ComplementRequester.getComplement().filter { it.matchesQuery(query) } +
+        WorkRequester.getWorkHistory().filter { it.matchesQuery(query) } +
+        PortfolioRequester.getPortfolio().filter { it.matchesQuery(query) })
 }

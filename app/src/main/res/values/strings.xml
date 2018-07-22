@@ -27,6 +27,6 @@ Pouco tempo de desenvolvimento foi empregado antes da publicação na Play Store
   <!--Share-->
   <string name="share">Compartilhe este App</string>
   <!--Apps-->
-  <string name="apps">Portfolio de Apps</string>
+  <string name="portfolio">Portfolio de Apps</string>
 
 </resources>

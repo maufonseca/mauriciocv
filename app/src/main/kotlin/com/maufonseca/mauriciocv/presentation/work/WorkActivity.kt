@@ -13,9 +13,8 @@ class WorkActivity : ListActivity() {
 
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
-    val titleView = findViewById<TextView>(R.id.title_textview)
-    titleView.text = getString(R.string.work_history)
+    setListTitle(getString(R.string.work_history))
     val appsRecyclerView = findViewById<RecyclerView>(R.id.content_recyclerview)
-    appsRecyclerView.adapter = SnippetAdapter(this, WorkRequester.workHistory)
+    appsRecyclerView.adapter = SnippetAdapter(this, WorkRequester.getWorkHistory())
   }
 }
