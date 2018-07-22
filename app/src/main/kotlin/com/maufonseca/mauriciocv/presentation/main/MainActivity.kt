@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
+import android.support.v7.widget.SearchView
 import android.view.View
 
 import com.maufonseca.mauriciocv.infrastructure.SynthesisRequester
@@ -25,7 +26,6 @@ import java.util.ArrayList
 class MainActivity : AppCompatActivity(), SearchDisplay {
   var interactor: SearchInteraction? = null
   var snippetRecyclerView: RecyclerView? = null
-  var searchView: android.support.v7.widget.SearchView? = null
 
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
@@ -44,9 +44,9 @@ class MainActivity : AppCompatActivity(), SearchDisplay {
   }
 
   fun configureSearchWidget() {
-    searchView = findViewById(R.id.search_view)
+    val searchView = findViewById<SearchView>(R.id.search_view)
 
-    searchView?.setOnQueryTextListener(object : android.support.v7.widget.SearchView.OnQueryTextListener {
+    searchView.setOnQueryTextListener(object : android.support.v7.widget.SearchView.OnQueryTextListener {
       override fun onQueryTextSubmit(query: String): Boolean {
         return false
       }
