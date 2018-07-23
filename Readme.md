@@ -6,7 +6,7 @@ It's a simple application where the user can search for my academic/work/qualifi
 
 ### Code Language
 
-- Kotlin <img src="img/kotlin.png" width="16px">
+- Kotlin <img src="img/kotlin.png" width="20px">
 
 ### Project features
 1. Android Lolipop 5.0+ supported
@@ -16,8 +16,8 @@ It's a simple application where the user can search for my academic/work/qualifi
 1. Lightweight as 4MB
 1. Material design guided
 1. Animated =D
-1. Published on [**Play Store**]("https://play.google.com/store/apps/details?id=com.maufonseca.mauriciocv/) 
+1. Published on [**Play Store**](https://play.google.com/store/apps/details?id=com.maufonseca.mauriciocv/ "Mauricio CV on Play Store") 
 
 ### Install the app
 - Feel free to clone this repo and run with Android Studio 3.0+
-- Anyway, you can get the app  on [**Play Store**]("https://play.google.com/store/apps/details?id=com.maufonseca.mauriciocv/) 
+- Anyway, you can get the app  on [**Play Store**](https://play.google.com/store/apps/details?id=com.maufonseca.mauriciocv/ "Mauricio CV on Play Store")
