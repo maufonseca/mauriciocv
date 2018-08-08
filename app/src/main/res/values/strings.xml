@@ -14,12 +14,12 @@
   <string name="contact">Contato</string>
   <!--Dev-->
   <string name="about">Sobre este app</string>
-  <string name="explanation">Este aplicativo foi desenvolvido utilizando o princípio do KISS (Keep-It-Simple-Stupid).
-A arquitetura clean foi utilizada brevemente porém sem criar muitos rodeios uma vez que o app é pequeno.
-Não foi utilizada nenhuma biblioteca externa e o app é nativo Android, iniciado em Java mas migrado para Kotlin após um curto período.
-Pouco tempo de desenvolvimento foi empregado antes da publicação na Play Store, afinal é melhor falhar rápido do que demorado.</string>
+  <string name="explanation">Este aplicativo foi desenvolvido utilizando o princípio da simplicidade e evitando desperdícios.
+A arquitetura clean foi utilizada, porém sem criar muitos rodeios uma vez que o app é pequeno.
+Não utilizei nenhuma biblioteca externa e o app é nativo Android, escrito em Kotlin.
+Pouco tempo de desenvolvimento foi empregado antes da publicação na Play Store.</string>
   <string name="github_call">O código está aberto no GitHub:</string>
-  <string name="email_call">Sugestões e críticas ou pedidos podem ser enviados por e-mail: </string>
+  <string name="email_call">Sugestões e críticas e pedidos podem ser enviados por e-mail: </string>
   <string name="rating_call">Avalie este aplicativo na Play Store e deixe seu comentário pelo link:</string>
   <string name="thanks">Muito obrigado por ter chegado até aqui!</string>
   <!--Main-->

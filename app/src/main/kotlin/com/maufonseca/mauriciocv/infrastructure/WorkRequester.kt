@@ -67,14 +67,19 @@ object WorkRequester {
 
     val qaRinga = Snippet("Jan/2018 ao Presente\n" + "Ringa (www.ringa.com.br)",
         "Engenheiro de QA (Android/iOS/Web)",
-        "Responsável pelo planejamento e implantação de QA na empresa, introduzindo testes automatizados de comportamento a Web e Mobile",
-        "• Extração de requisitos de sistemas legado por análise exploratória\n\n" +
+        "Responsável pela melhoria de qualidade nos projetos da empresa através de inovações no gerenciamento dos projetos, supervisão do desenvolvimento e automatização de testes",
+        "• Gerenciamento de projetos ágeis Mobile/Web focado em evitar desperdícios\n\n" +
+            "• Ranqueamento de requisitos e gerenciamento de mudanças solicitadas por clientes\n\n" +
+            "• Criação e validação de backlogs de produto/sprints\n\n" +
+            "• Adaptação de ferramentas tradicionais de gerenciamento de projetos nos métodos ágeis da empresa, criando um framework híbrido\n\n" +
+            "• Aprimoramento do uso da ferramenta JIRA na empresa\n" +
+            " - Aferições de métricas, geração de relatórios sobre as sprints, uso de versões, epics e melhoria nas estimativas e na documentação das issues\n\n" +
+            "• Implantação da área de QA na empresa com testes automatizados utilizando Jenkins e Docker.\n\n" +
+            "• Extração de requisitos de sistemas legado por análise exploratória\n\n" +
             "• Manutenção de documentação ágil sobre o sistema através de mapas mentais com a ferramenta XMind\n\n" +
             "• Elaboração de casos de teste na linguagem Gherkin e supervisão da execução de BDD em projetos Mobile/Web\n\n" +
             "• Automatização de testes BDD utilizando o Katalon Studio na linguagem Groovy\n\n" +
-            "• Prática com Selenium IDE/Appium\n\n" +
             "• Configuração da execução periódica dos testes pela ferramenta Jenkins integrada com repositório git em um container do Docker\n\n" +
-            "• Aplicação de testes em ambiente de desenvolvimento Ágil\n\n" +
             "• Testes de desempenho de sistemas Web/Mobile\n\n" +
             "• Análise de melhoria/regressão nos sistemas desenvolvidos\n\n" +
             "• Integração de ferramentas de teste com o software JIRA para análises de qualidade do desenvolvimento e da equipe")
@@ -88,6 +93,6 @@ object WorkRequester {
             "• Forte uso de linguagens orientadas a objetos\n" +
             " - Java e Objective-C")
 
-    return arrayListOf(devRinga, qaRinga, internRinga)
+    return arrayListOf(qaRinga, devRinga, internRinga)
   }
 }

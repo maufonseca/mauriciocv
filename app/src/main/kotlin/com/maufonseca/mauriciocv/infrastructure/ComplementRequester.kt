@@ -1,12 +1,17 @@
 package com.maufonseca.mauriciocv.infrastructure
 
 import com.maufonseca.mauriciocv.model.Snippet
-
 import java.util.ArrayList
 
 object ComplementRequester {
 
   fun getComplement(): ArrayList<Snippet> {
+
+    val kotlin2 = Snippet("Bootcamp de Kotlin para programadores/2018",
+        "(classroom.udacity.com/courses/ud9011)",
+        "Treinamento da linguagem Kotlin ministrado por programadores do Google com exemplos práticos das ferramentas da linguagem",
+        "• Funções top level\n" + "• Funcões como parâmetro\n" + "• Lambdas\n" + "• Generics\n" +
+            "• Manipulação funcional\n")
 
     val kotlin = Snippet("Curso: Fundamentos de Programação Moderna com Kotlin/2018",
         "(udemy.com/curso-kotlin-pt)",
@@ -38,7 +43,7 @@ object ComplementRequester {
             "• Certificação militar de Honra ao Mérito\n" +
             "• Promoção a Cabo do Exército")
 
-    return arrayListOf(kotlin, web, google, devConf, army)
+    return arrayListOf(kotlin2, kotlin, web, google, devConf, army)
   }
 
 }
